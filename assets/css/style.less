@@ -1,0 +1,219 @@
+@font-face {
+  font-family: 'Dogica';
+  src: url('../fonts/dogica-pixel/dogicapixel.woff')  format('woff'),
+  url('../fonts/dogica-pixel/dogicapixel.eot')  format('eot'),
+  url('../fonts/dogica-pixel/dogicapixel.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dogica';
+  src: url('../fonts/dogica-pixel/dogicapixelbold.woff')  format('woff'),
+  url('../fonts/dogica-pixel/dogicapixelbold.eot')  format('eot'),
+  url('../fonts/dogica-pixel/dogicapixelbold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../fonts/urbanist/Urbanist-Regular.woff')  format('woff'),
+  url('../fonts/urbanist/Urbanist-Regular.otf')  format('eot'),
+  url('../fonts/urbanist/Urbanist-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../fonts/urbanist/Urbanist-Medium.woff')  format('woff'),
+  url('../fonts/urbanist/Urbanist-Medium.otf')  format('eot'),
+  url('../fonts/urbanist/Urbanist-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../fonts/urbanist/Urbanist-SemiBold.woff')  format('woff'),
+  url('../fonts/urbanist/Urbanist-SemiBold.otf')  format('eot'),
+  url('../fonts/urbanist/Urbanist-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../fonts/urbanist/Urbanist-Bold.woff')  format('woff'),
+  url('../fonts/urbanist/Urbanist-Bold.otf')  format('eot'),
+  url('../fonts/urbanist/Urbanist-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lemon';
+  src: url('../fonts/lemonmilk/LEMONMILK-Bold.otf')  format('woff'),
+  url('../fonts/lemonmilk/LEMONMILK-Bold.otf')  format('eot'),
+  url('../fonts/lemonmilk/LEMONMILK-Bold.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+// VARIABLES - Colors
+@pink: #FAC0E6;
+@white: #fff;
+@black: #000;
+@darkGrey: #222222;
+
+// VARIABLES - Fonts
+.satoshi{
+  font-family : "Lemon", sans-serif;
+}
+.dogica{
+  font-family: 'Dogica', sans-serif;
+}
+.urbanist{
+  font-family: 'Urbanist', sans-serif;
+}
+.lemon{
+  font-family: 'Lemon', sans-serif;
+}
+
+// VARIABLES - Colors
+.pink{
+  color: @pink;
+}
+
+//BTN
+.btn-pink{
+  .urbanist;
+  background-color: @pink;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  &:hover{
+    color: @white;
+    border: 1px solid @white;
+  }
+}
+
+.btn-pink.second{
+  .urbanist;
+  background-color: @pink;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  &:hover{
+    color: @black;
+    border: 1px solid @black;
+    background-color: none;
+  }
+}
+
+
+@keyframes bounce {
+  from {transform: translateY(0);}
+  to   {transform: translateY(-10px);}
+}
+
+body{
+  background-color: @black;
+  color: @white;
+  overflow-x: hidden;
+  h2{
+    font-family: 'Lemon', sans-serif;
+    color: @pink;
+    font-size: 36px;
+    @media screen and (min-width: 992px) {
+      font-size: 46px;
+    }
+    text-align: center;
+  }
+
+  p{
+    font-size: 16px;
+    @media screen and (min-width:992px) {
+      font-size: 20px;
+    }
+  }
+}
+
+#loading {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  display: block;
+  z-index: 99;
+  background-color: #FADAEE;
+}
+
+#loading::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 4rem;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  content: "Loading";
+  animation: emojiLoader 1.2s steps(7) infinite forwards 0.2s;
+}
+
+@keyframes emojiLoader {
+  0% {
+    content: "⌛";
+  }
+  12.5% {
+    content: "🏴‍☠️";
+  }
+  25% {
+    content: "👽";
+  }
+  37.5% {
+    content: "📹";
+  }
+  50% {
+    content: "🎮";
+  }
+  62.5% {
+    content: "🐈‍⬛";
+  }
+  75% {
+    content: "🖤";
+  }
+  87.5% {
+    content: "🎵";
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  animation: rotating 10s linear infinite;
+}
+
+
+@import "./header.less";
+@import "./top.less";
+@import "./main.less";
+@import "./sticky-btn.less";
+@import "./slider.less";
+@import "./footer.less";
+@import "./choice.less";
+@import "./hidden.less";
+@import "./portfolio.less";

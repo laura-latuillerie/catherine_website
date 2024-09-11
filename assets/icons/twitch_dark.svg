@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38.748" height="38.748" viewBox="0 0 38.748 38.748">
+  <g id="twitch_dark" transform="translate(-337.422 -4692.422)">
+    <circle id="Ellipse_12" data-name="Ellipse 12" cx="16.5" cy="16.5" r="16.5" transform="translate(340 4695)" fill="#fff"/>
+    <g id="Layer_2" data-name="Layer 2" transform="translate(337.422 4692.422)">
+      <g id="_72.twitch" data-name="72.twitch">
+        <g id="icon">
+          <path id="Tracé_119" data-name="Tracé 119" d="M52.06,44.56V59.828h4.749v3.155l3.164-3.155h5.8l3.694-3.685V44.56Zm7.913,10.532H57.863V48.774h2.109Zm5.8,0H63.662V48.774h2.111Z" transform="translate(-40.598 -34.75)"/>
+          <path id="Tracé_120" data-name="Tracé 120" d="M19.374,0A19.374,19.374,0,1,0,38.748,19.374,19.374,19.374,0,0,0,19.374,0Zm11.6,22.456-6.321,6.308H19.9l-3.168,3.159H13.571V28.764h-5.8V11.92L9.35,7.706H30.979Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

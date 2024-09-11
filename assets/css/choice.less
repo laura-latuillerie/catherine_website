@@ -1,0 +1,47 @@
+#choice-bg{
+ width: 100vh;
+ height: 100vh;
+ position: fixed;
+ z-index: -1;
+}
+#choice-content{
+ text-align: center;
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ @media screen and (min-width: 992px) {
+  max-width: 768px;
+ }
+
+ h2, p{
+  color: @white;
+ }
+
+ h2{
+  .dogica;
+  text-transform: uppercase;
+  font-size: 16px;
+  @media screen and (min-width: 992px) {
+   font-size: 20px;
+  }
+ }
+
+ p{
+  .urbanist;
+  font-weight: 500;
+  font-size: 14px;
+  @media screen and (min-width: 992px) {
+   font-size: 16px;
+  }
+ }
+
+ #pills-logo{
+  max-width: 50%;
+  margin-bottom: 20px;
+  @media screen and (min-width: 992px) {
+   max-width: 100%;
+  }
+ }
+ 
+}

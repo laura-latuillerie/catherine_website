@@ -1,0 +1,64 @@
+#bg-hidden{
+ position: fixed;
+ height: 100vh;
+ width: 100vw;
+ background-image: url(../images/windows-wallpaper.jpg);
+ background-size: cover;
+ background-position: center;
+ z-index: -1;
+}
+
+#wrapper-hidden{
+ padding: 20px;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+
+ @media screen and (min-width:450px) {
+  grid-template-columns: repeat(4, 1fr);
+ }
+
+ @media screen and (min-width:576px) {
+  grid-template-columns: repeat(6, 1fr);
+ }
+
+ @media screen and (min-width:768px) {
+  grid-template-columns: repeat(8, 1fr);
+ }
+
+ @media screen and (min-width:992px) {
+  grid-template-columns: repeat(10, 1fr);
+ }
+
+ @media screen and (min-width:1200px) {
+  grid-template-columns: repeat(14, 1fr);
+ }
+ @media screen and (min-width:1600px) {
+  grid-template-columns: repeat(16, 1fr);
+ }
+
+ .item{
+  text-align: center;
+
+  .img-wrapper-hidden{
+   height: 80px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   img{
+    max-height: 100%;
+   }
+  }
+  p{
+   height: 40px;
+   color: @white;
+   font-family: 'Arial', sans-serif;
+   font-size: 13px;
+   font-weight: 500;
+   line-height: 16px;
+   text-shadow: black 1px 1px 0;
+   margin-bottom: 0; 
+   padding: 0 5px;
+  }
+
+ }
+}

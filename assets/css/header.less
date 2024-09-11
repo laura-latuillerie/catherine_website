@@ -1,0 +1,58 @@
+header{
+  nav.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: transparent;
+    padding: 0;
+
+    .navbar-brand {
+      @media screen and (min-width:992px) {
+        padding: 10px 20px 0;
+      }
+      img{
+        width: 70px;
+      }
+    }
+
+    .navbar-toggler{
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    #navbarScroll{
+      @media screen and (min-width:992px) {
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 100px;
+        padding: 10px 20px 10px;
+        max-width: fit-content;
+        transition: background 0.6s ease-in-out;
+      }
+      
+      .nav-link{
+        .urbanist;
+        font-weight: 600;
+      }
+    }
+
+    .offcanvas{
+      background-color: @pink;
+      color: @black;
+      width: 100vw;
+      @media screen and (min-width:992px) {
+        display: none;
+      }
+      .btn-close{
+        filter: unset!important;
+      }
+      .navbar-nav-offcanvas{
+        .nav-link{
+          color: @black;
+          .lemon;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
