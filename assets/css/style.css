@@ -115,12 +115,13 @@ body p {
 #loading {
   width: 100%;
   height: 100%;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   position: fixed;
   display: block;
   z-index: 99;
   background-color: #FADAEE;
+  color: #000000;
 }
 #loading::before {
   position: absolute;
@@ -132,6 +133,8 @@ body p {
   transform: translate(-50%, -50%);
   content: "Loading";
   animation: emojiLoader 1.2s steps(7) infinite forwards 0.2s;
+  font-family: 'dogica';
+  font-size: 40px;
 }
 @keyframes emojiLoader {
   0% {
@@ -328,7 +331,12 @@ footer.active #mail-container {
   padding: 20px;
   border: 1px solid #000000;
   border-radius: 20px;
-  max-width: 80%;
+  max-width: 90%;
+}
+@media screen and (min-width: 576px) {
+  footer.active #mail-container {
+    max-width: 80%;
+  }
 }
 @media screen and (min-width: 992px) {
   footer.active #mail-container {
@@ -361,8 +369,14 @@ footer.active .social a img {
   }
 }
 footer.active .credits {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 12px;
+  line-height: 14px;
+}
+@media screen and (min-width: 992px) {
+  footer.active .credits {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 #choice-bg {
   width: 100vh;

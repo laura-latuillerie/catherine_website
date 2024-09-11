@@ -8,3 +8,7 @@ window.onscroll = function(ev) {
      document.getElementById("navbarScroll").style.backgroundColor = "rgba(0, 0, 0, 0.8)"; 
  }
 };
+
+$("#offcanvasExample a").click(function(){
+    $('.offcanvas').offcanvas('hide');
+   });

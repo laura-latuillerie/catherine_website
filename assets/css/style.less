@@ -148,12 +148,13 @@ body{
 #loading {
   width: 100%;
   height: 100%;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   position: fixed;
   display: block;
   z-index: 99;
   background-color: #FADAEE;
+  color:@black;
 }
 
 #loading::before {
@@ -166,6 +167,9 @@ body{
   transform: translate(-50%, -50%);
   content: "Loading";
   animation: emojiLoader 1.2s steps(7) infinite forwards 0.2s;
+
+  font-family: 'dogica';
+  font-size: 40px;
 }
 
 @keyframes emojiLoader {
