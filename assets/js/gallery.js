@@ -9,7 +9,7 @@ function getScrollAmount() {
 const tween = gsap.to(gallery, {
 	x: getScrollAmount,
 	duration: 3,
-	ease: "none"
+	ease: "expoScale"
 });
 
 ScrollTrigger.create({
