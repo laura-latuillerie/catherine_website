@@ -309,56 +309,56 @@ header nav.navbar .offcanvas .navbar-nav-offcanvas .nav-link {
     right: 20px;
   }
 }
-footer {
+footer.active {
   background: #fac0e6;
   padding: 20px 0 50px;
   text-align: center;
   color: #000000;
 }
-footer h2 {
+footer.active h2 {
   color: #000000;
 }
-footer p,
-footer a {
+footer.active p,
+footer.active a {
   font-family: 'Urbanist', sans-serif;
 }
-footer #mail-container {
+footer.active #mail-container {
   padding: 20px;
   border: 1px solid #000000;
   border-radius: 20px;
   max-width: 80%;
 }
 @media screen and (min-width: 992px) {
-  footer #mail-container {
+  footer.active #mail-container {
     padding: 30px 10%;
     max-width: 768px;
   }
 }
-footer #mail-container a {
+footer.active #mail-container a {
   font-weight: bold;
   font-size: 16px;
   color: #000000;
 }
 @media screen and (min-width: 992px) {
-  footer #mail-container a {
+  footer.active #mail-container a {
     font-size: 20px;
   }
 }
-footer .social a {
+footer.active .social a {
   transition: all 0.3s ease-in-out;
 }
-footer .social a:hover {
+footer.active .social a:hover {
   filter: brightness(110%);
 }
-footer .social a img {
+footer.active .social a img {
   width: 35px;
 }
 @media screen and (min-width: 768px) {
-  footer .social a img {
+  footer.active .social a img {
     width: 50px;
   }
 }
-footer .credits {
+footer.active .credits {
   font-size: 14px;
   line-height: 18px;
 }
@@ -397,7 +397,7 @@ footer .credits {
 #choice-content p {
   font-family: 'Urbanist', sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
 }
 @media screen and (min-width: 992px) {
   #choice-content p {
