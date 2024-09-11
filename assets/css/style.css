@@ -92,6 +92,7 @@ body {
   background-color: #000000;
   color: #ffffff;
   overflow-x: hidden;
+  font-family: 'urbanist';
 }
 body h2 {
   font-family: 'Lemon', sans-serif;
@@ -123,7 +124,8 @@ body p {
   background-color: #FADAEE;
   color: #000000;
 }
-#loading::before {
+#loading:before {
+  font-family: 'Dogica';
   position: absolute;
   left: 50%;
   top: 50%;
@@ -133,33 +135,48 @@ body p {
   transform: translate(-50%, -50%);
   content: "Loading";
   animation: emojiLoader 1.2s steps(7) infinite forwards 0.2s;
-  font-family: 'dogica';
   font-size: 40px;
 }
 @keyframes emojiLoader {
   0% {
-    content: "⌛";
+    content: url(../pokemon_sprites/spr_y-gbc_025.png);
+    height: 100px;
+    width: 100px;
   }
   12.5% {
-    content: "🏴‍☠️";
+    content: url(../pokemon_sprites/spr_y-gbc_035.png);
+    height: 100px;
+    width: 100px;
   }
   25% {
-    content: "👽";
+    content: url(../pokemon_sprites/spr_y-gbc_151.png);
+    height: 100px;
+    width: 100px;
   }
   37.5% {
-    content: "📹";
+    content: url(../pokemon_sprites/spr_y-gbc_104.png);
+    height: 100px;
+    width: 100px;
   }
   50% {
-    content: "🎮";
+    content: url(../pokemon_sprites/spr_y-gbc_039.png);
+    height: 100px;
+    width: 100px;
   }
   62.5% {
-    content: "🐈‍⬛";
+    content: url(../pokemon_sprites/spr_y-gbc_056.png);
+    height: 100px;
+    width: 100px;
   }
   75% {
-    content: "🖤";
+    content: url(../pokemon_sprites/spr_y-gbc_094.png);
+    height: 100px;
+    width: 100px;
   }
   87.5% {
-    content: "🎵";
+    content: url(../pokemon_sprites/spr_y-gbc_132.png);
+    height: 100px;
+    width: 100px;
   }
 }
 @keyframes rotating {
