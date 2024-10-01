@@ -16,13 +16,11 @@ function onYouTubeIframeAPIReady() {
           { 'autoplay': 1,
            'controls': 0,
            enablejsapi: 1,
-
             listType:'playlist',
             list: 'PL4pvheXYumia1FQOPEqFbc4MZptoCy79e'
           },
     events: {
       'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
     }
   });
 }
@@ -30,7 +28,6 @@ function onYouTubeIframeAPIReady() {
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
   event.target.playVideo();
-
   player.mute();
 }
 
