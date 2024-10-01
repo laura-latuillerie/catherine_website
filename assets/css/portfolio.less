@@ -28,6 +28,7 @@ section#videos-portfolio{
 }
 
 section#formules-videos{
+
  .formules-container{
   #carousel-formules-videos{
    margin: 0 20px 30px;
@@ -44,7 +45,6 @@ section#formules-videos{
    border-radius: 20px;
    padding: 15px;
    color: @black;
-   width: 320px;
    .urbanist;
    .formule-header{
     background-color: @pink;
@@ -59,7 +59,15 @@ section#formules-videos{
     border-radius: 0 0 10px 10px;
     padding: 20px;
     p{
-     font-size: 14px;
+      display: block;
+      font-size: 14px;
+      line-height: 18px;
+     &.formule-desc{
+      height: 130px;
+     }
+    }
+    .formule-options{
+      height: 180px;
     }
     .prestation-item{
      font-size: 12px;
@@ -106,8 +114,16 @@ section#formules-photos{
     background-color: @white;
     border-radius: 0 0 10px 10px;
     padding: 20px;
-    p{
-     font-size: 14px;
+      p{
+      font-size: 14px;
+      line-height: 18px;
+        &.formule-desc{
+          height: 130px;
+        }
+      }
+      .formule-options{
+        height: 180px;
+      }
     }
     .prestation-item{
      font-size: 12px;
@@ -120,8 +136,8 @@ section#formules-photos{
   }   
   }
 
- }
 }
+
 
 section#photos-portfolio{
 padding: 20px 5%;
@@ -152,7 +168,7 @@ overflow-x: hidden;
 
  .div1 {
   grid-column: span 3 / span 3;
-  background-image: url(../images/img-mosaic-1.png);
+  background-image: url(../images/img-mosaic-1.jpg);
  }
  
  .div2 {
@@ -166,7 +182,7 @@ overflow-x: hidden;
   grid-column: span 2 / span 2;
   grid-column-start: 2;
   grid-row-start: 2;
-  background-image: url(../images/img-mosaic-3.png);
+  background-image: url(../images/img-mosaic-3.jpg);
 
  }
  
@@ -174,14 +190,14 @@ overflow-x: hidden;
   grid-column: span 2 / span 2;
   grid-column-start: 1;
   grid-row-start: 3;
-  background-image: url(../images/img-mosaic-4.png);
+  background-image: url(../images/img-mosaic-4.jpg);
 
  }
  
  .div5 {
   grid-column-start: 3;
   grid-row-start: 3;
-  background-image: url(../images/img-mosaic-5.png);
+  background-image: url(../images/img-mosaic-5.jpg);
 
  }
  
@@ -189,7 +205,7 @@ overflow-x: hidden;
   grid-column: span 3 / span 3;
   grid-column-start: 1;
   grid-row-start: 4;
-  background-image: url(../images/img-mosaic-6.png);
+  background-image: url(../images/img-mosaic-6.jpg);
 
  }
  
@@ -204,14 +220,14 @@ overflow-x: hidden;
   grid-column: span 2 / span 2;
   grid-column-start: 2;
   grid-row-start: 5;
-  background-image: url(../images/img-mosaic-8.png);
+  background-image: url(../images/img-mosaic-8.jpg);
 
  }
  
  .div9 {
   grid-column-start: 4;
   grid-row-start: 1;
-  background-image: url(../images/img-mosaic-5.png);
+  background-image: url(../images/img-mosaic-9.jpg);
 
  }
  
@@ -219,7 +235,7 @@ overflow-x: hidden;
   grid-column: span 2 / span 2;
   grid-column-start: 5;
   grid-row-start: 1;
-  background-image: url(../images/img-mosaic-4.png);
+  background-image: url(../images/img-mosaic-10.jpg);
 
  }
  
@@ -227,7 +243,7 @@ overflow-x: hidden;
   grid-column: span 3 / span 3;
   grid-column-start: 4;
   grid-row-start: 2;
-  background-image: url(../images/img-mosaic-6.png);
+  background-image: url(../images/img-mosaic-11.jpg);
 
  }
  
@@ -235,19 +251,19 @@ overflow-x: hidden;
   grid-column: span 2 / span 2;
   grid-column-start: 4;
   grid-row-start: 3;
-  background-image: url(../images/img-mosaic-8.png);
+  background-image: url(../images/img-mosaic-15.jpg);
  }
  
  .div13 {
   grid-column-start: 6;
   grid-row-start: 3;
-  background-image: url(../images/img-mosaic-7.png);
+  background-image: url(../images/img-mosaic-13.jpg);
  }
  
  .div14 {
   grid-column-start: 4;
   grid-row-start: 4;
-  background-image: url(../images/img-mosaic-2.png);
+  background-image: url(../images/img-mosaic-14.png);
 
  }
  
@@ -255,7 +271,7 @@ overflow-x: hidden;
   grid-column: span 2 / span 2;
   grid-column-start: 5;
   grid-row-start: 4;
-  background-image: url(../images/img-mosaic-3.png);
+  background-image: url(../images/img-mosaic-12.jpg);
 
  }
  
@@ -263,7 +279,7 @@ overflow-x: hidden;
   grid-column: span 3 / span 3;
   grid-column-start: 4;
   grid-row-start: 5;
-  background-image: url(../images/img-mosaic-1.png);
+  background-image: url(../images/img-mosaic-16.jpg);
 
  }
  
@@ -271,7 +287,7 @@ overflow-x: hidden;
   grid-column: span 3 / span 3;
   grid-column-start: 7;
   grid-row-start: 1;
-  background-image: url(../images/img-mosaic-1.png);
+  background-image: url(../images/img-mosaic-17.jpg);
 
  }
  
@@ -279,21 +295,21 @@ overflow-x: hidden;
   grid-column: span 2 / span 2;
   grid-column-start: 7;
   grid-row-start: 2;
-  background-image: url(../images/img-mosaic-2.png);
+  background-image: url(../images/img-mosaic-18.jpg);
 
  }
  
  .div19 {
   grid-column-start: 9;
   grid-row-start: 2;
-  background-image: url(../images/img-mosaic-3.png);
+  background-image: url(../images/img-mosaic-19.jpg);
 
  }
  
  .div20 {
   grid-column-start: 7;
   grid-row-start: 3;
-  background-image: url(../images/img-mosaic-5.png);
+  background-image: url(../images/img-mosaic-20.jpg);
 
  }
  
@@ -301,7 +317,7 @@ overflow-x: hidden;
   grid-column: span 2 / span 2;
   grid-column-start: 8;
   grid-row-start: 3;
-  background-image: url(../images/img-mosaic-4.png);
+  background-image: url(../images/img-mosaic-21.jpg);
 
  }
  
@@ -309,7 +325,7 @@ overflow-x: hidden;
   grid-column: span 3 / span 3;
   grid-column-start: 7;
   grid-row-start: 4;
-  background-image: url(../images/img-mosaic-6.png);
+  background-image: url(../images/img-mosaic-22.jpg);
 
  }
  
@@ -317,14 +333,14 @@ overflow-x: hidden;
   grid-column: span 2 / span 2;
   grid-column-start: 7;
   grid-row-start: 5;
-  background-image: url(../images/img-mosaic-8.png);
+  background-image: url(../images/img-mosaic-23.jpg);
 
  }
  
  .div24 {
   grid-column-start: 9;
   grid-row-start: 5;
-  background-image: url(../images/img-mosaic-7.png);
+  background-image: url(../images/img-mosaic-24.png);
 
  }
 }
@@ -365,15 +381,28 @@ section#team{
   .team-member{
    text-align: center;
    padding-bottom: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   p{
+    max-width: 300px;
+    padding: 5px 10px;
+
+    margin-bottom: 0;
+   }
    img{
     max-width: 220px;
     margin: 0 auto;
    }
+   .link-profile{
+    display: inline-block;
+    text-transform: uppercase;
+    color: @pink;
+   }
    .fonction, .point-fort{
     .urbanist;
     font-size: 16px;
-    margin-bottom: 0;
-    padding: 0 20px;
    }
 
    &.fourth{

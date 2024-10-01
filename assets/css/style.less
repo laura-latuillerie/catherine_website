@@ -116,7 +116,15 @@
     background-color: none;
   }
 }
-
+.gelatine {
+  animation: gelatine 0.5s infinite;
+}
+@keyframes gelatine {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.9, 1.1); }
+  50% { transform: scale(1.1, 0.9); }
+  75% { transform: scale(0.95, 1.05); }
+}
 
 @keyframes bounce {
   from {transform: translateY(0);}
@@ -162,17 +170,14 @@ body{
     position: absolute;
     left: 50%;
     top: 50%;
-    font-size: 4rem;
     text-align: center;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    content: "Loading";
+    content: "";
     animation: emojiLoader 1.2s steps(7) infinite forwards 0.2s;
-    font-size: 40px;
+    font-size: 10px;
   }
-  
 }
-
 
 @keyframes emojiLoader {
   0% {
@@ -239,3 +244,4 @@ body{
 @import "./choice.less";
 @import "./hidden.less";
 @import "./portfolio.less";
+@import "./perso.less";

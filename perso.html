@@ -21,7 +21,7 @@
     <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="./assets/images/logo_catherine_blue_pill.png" alt="">
+          <img src="./assets/images/logo_catherine_red_pill.png" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
           <span class="navbar-toggler-icon"></span>
@@ -83,11 +83,11 @@
     
   </div>
   <div id="loading"></div>
-  <section id="top-portfolio" role="region">
+  <section id="top-perso" role="region">
     
     <div class="illustration">
       <video autoplay muted loop>
-        <source src="./assets/video/video_desktop.mp4" type="video/mp4">
+        <source src="./assets/video/red_pill_v2.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
       </video>
       <div class="layer"></div>
@@ -99,623 +99,484 @@
       </div>
     </div>
   </section>
-  <section id="videos-portfolio" role="region">
+  <section id="tele-perso" role="region">
     <div class="container-fluid py-3 px-0">
-      <H2 class="mt-4">vidéos</H2>
+      <H2 class="mt-4">yearz 2990’s</H2>
       <div class="container-fluid px-0">
         <div class="row py-5">
-          <div class="col-12 col-md-6 categorie-video" style="background-image: url(./assets/images/clips-preview.png);">
-            <div class="content-inside">
-              <h3>Clips</h3>
-              <a href="#">
-                <p class="link-light link-offset-4 link-underline-opacity-25 link-underline-opacity-100-hover link-underline-light">Voir le showreel</p>
-              </a>
+          <div class="col-12 d-flex justify-content-center video-container">
+            <div id="player-overlay">
+              <img src="./assets/images/tv_mockup.png" alt="">
             </div>
-          </div>
-          <div class="col-12 col-md-6 categorie-video" style="background-image: url(./assets/images/danse-preview.png);">
-            <div class="content-inside">
-              <h3>Danse</h3>
-              <a href="#">
-                <p class="link-light link-offset-4 link-underline-opacity-25 link-underline-opacity-100-hover link-underline-light">Voir le showreel</p>
-              </a>
+            <div id="player-container">
+              <div id="player"></div>
             </div>
-          </div>
-          <div class="col-12 col-md-6 categorie-video" style="background-image: url(./assets/images/lives-preview.png);">
-            <div class="content-inside">
-              <h3>Lives</h3>
-              <a href="#">
-                <p class="link-light link-offset-4 link-underline-opacity-25 link-underline-opacity-100-hover link-underline-light">Voir le showreel</p>
-              </a>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 categorie-video" style="background-image: url(./assets/images/making-of-preview.png);">
-            <div class="content-inside">
-              <h3>Making-of/Teasers</h3>
-              <a href="#">
-                <p class="link-light link-offset-4 link-underline-opacity-25 link-underline-opacity-100-hover link-underline-light">Voir le showreel</p>
-              </a>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 categorie-video" style="background-image: url(./assets/images/docu-preview.png);">
-            <div class="content-inside">
-              <h3>Documentaires</h3>
-              <a href="#">
-                <p class="link-light link-offset-4 link-underline-opacity-25 link-underline-opacity-100-hover link-underline-light">Voir le showreel</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>    
+          </div>    
   </section>
-  <section id="formules-videos" role="region">
-    <div class="container-fluid py-3 px-0">
-      <H2 class="pb-2">Formules vidéos</H2>
+  <section id="twitch" role="region">
+    <img src="./assets/images/teamtomodachis_logo.png" alt="">
+    <div class="container" id=twitch-container>
+    <div class="video-mask">
+       <video controls poster="./assets/images/poster-twitch.png">
+        <source src="./assets/video/twitch.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+      </video>     
     </div>
-    <div class="container formules-container">
-      <div id="carousel-formules-videos">
-        <div class="formule">
-          <div class="formule-header">
-            <h4><span class="fw-bold">Cherry</span>Pink</h4>
-            <h6>Shooting vidéo promotionnelle</h6>
-            <h3 class="prix">160€</h3>
-          </div>
-          <div class="formule-body">
-            <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <hr>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/time-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 heures de tournage</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/montage-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">1 montage dynamique</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/file-text-edit.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 sessions de modification</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/sound-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">Prise de son «spectacle & concerts»</p>
-            </div>
-            <div class="btn-container pt-3">
-              <a href="" class="btn btn-pink second">je réserve</a>
-            </div>
-          </div>
-        </div>
-        <div class="formule">
-          <div class="formule-header">
-            <h4><span class="fw-bold">Cherry</span>Pink</h4>
-            <h6>Shooting vidéo promotionnelle</h6>
-            <h3 class="prix">160€</h3>
-          </div>
-          <div class="formule-body">
-            <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <hr>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/time-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 heures de tournage</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/montage-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">1 montage dynamique</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/file-text-edit.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 sessions de modification</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/sound-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">Prise de son «spectacle & concerts»</p>
-            </div>
-            <div class="btn-container pt-3">
-              <a href="" class="btn btn-pink second">je réserve</a>
-            </div>
-          </div>
-        </div>
-        <div class="formule">
-          <div class="formule-header">
-            <h4><span class="fw-bold">Cherry</span>Pink</h4>
-            <h6>Shooting vidéo promotionnelle</h6>
-            <h3 class="prix">160€</h3>
-          </div>
-          <div class="formule-body">
-            <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <hr>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/time-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 heures de tournage</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/montage-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">1 montage dynamique</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/file-text-edit.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 sessions de modification</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/sound-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">Prise de son «spectacle & concerts»</p>
-            </div>
-            <div class="btn-container pt-3">
-              <a href="" class="btn btn-pink second">je réserve</a>
-            </div>
-          </div>
-        </div>
-        <div class="formule">
-          <div class="formule-header">
-            <h4><span class="fw-bold">Cherry</span>Pink</h4>
-            <h6>Shooting vidéo promotionnelle</h6>
-            <h3 class="prix">160€</h3>
-          </div>
-          <div class="formule-body">
-            <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <hr>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/time-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 heures de tournage</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/montage-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">1 montage dynamique</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/file-text-edit.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 sessions de modification</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/sound-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">Prise de son «spectacle & concerts»</p>
-            </div>
-            <div class="btn-container pt-3">
-              <a href="" class="btn btn-pink second">je réserve</a>
-            </div>
-          </div>
-        </div>
-        <div class="formule">
-          <div class="formule-header">
-            <h4><span class="fw-bold">Cherry</span>Pink</h4>
-            <h6>Shooting vidéo promotionnelle</h6>
-            <h3 class="prix">160€</h3>
-          </div>
-          <div class="formule-body">
-            <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <hr>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/time-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 heures de tournage</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/montage-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">1 montage dynamique</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/file-text-edit.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 sessions de modification</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/sound-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">Prise de son «spectacle & concerts»</p>
-            </div>
-            <div class="btn-container pt-3">
-              <a href="" class="btn btn-pink second">je réserve</a>
-            </div>
-          </div>
-        </div>
-        <div class="formule">
-          <div class="formule-header">
-            <h4><span class="fw-bold">Cherry</span>Pink</h4>
-            <h6>Shooting vidéo promotionnelle</h6>
-            <h3 class="prix">160€</h3>
-          </div>
-          <div class="formule-body">
-            <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <hr>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/time-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 heures de tournage</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/montage-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">1 montage dynamique</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/file-text-edit.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 sessions de modification</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/sound-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">Prise de son «spectacle & concerts»</p>
-            </div>
-            <div class="btn-container pt-3">
-              <a href="" class="btn btn-pink second">je réserve</a>
-            </div>
-          </div>
-        </div>
-        <div class="formule">
-          <div class="formule-header">
-            <h4><span class="fw-bold">Cherry</span>Pink</h4>
-            <h6>Shooting vidéo promotionnelle</h6>
-            <h3 class="prix">160€</h3>
-          </div>
-          <div class="formule-body">
-            <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <hr>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/time-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 heures de tournage</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/montage-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">1 montage dynamique</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/file-text-edit.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 sessions de modification</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/sound-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">Prise de son «spectacle & concerts»</p>
-            </div>
-            <div class="btn-container pt-3">
-              <a href="" class="btn btn-pink second">je réserve</a>
-            </div>
-          </div>
-        </div>
-        <div class="formule">
-          <div class="formule-header">
-            <h4><span class="fw-bold">Cherry</span>Pink</h4>
-            <h6>Shooting vidéo promotionnelle</h6>
-            <h3 class="prix">160€</h3>
-          </div>
-          <div class="formule-body">
-            <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <hr>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/time-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 heures de tournage</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/montage-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">1 montage dynamique</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/file-text-edit.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 sessions de modification</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/sound-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">Prise de son «spectacle & concerts»</p>
-            </div>
-            <div class="btn-container pt-3">
-              <a href="" class="btn btn-pink second">je réserve</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="photos-portfolio" role="region">
-    <div class="container-fluid py-3 px-0">
-      <H2 class="pb-2">Photos</H2>
-    </div>
-    <div class="container-fluid" id="gallery-wrapper">
-      <div class="gallery">
-        <div class="div1"></div>
-        <div class="div2"></div>
-        <div class="div3"></div>
-        <div class="div4"></div>
-        <div class="div5"></div>
-        <div class="div6"></div>
-        <div class="div7"></div>
-        <div class="div8"></div>
-        <div class="div9"></div>
-        <div class="div10"></div>
-        <div class="div11"></div>
-        <div class="div12"></div>
-        <div class="div13"></div>
-        <div class="div14"></div>
-        <div class="div15"></div>
-        <div class="div16"></div>
-        <div class="div17"></div>
-        <div class="div18"></div>
-        <div class="div19"></div>
-        <div class="div20"></div>
-        <div class="div21"></div>
-        <div class="div22"></div>
-        <div class="div23"></div>
-        <div class="div24"></div>
-      </div>
-  
-    </div>
-  </section>
-  <section id="formules-photos" role="region">
-    <div class="container-fluid py-3 px-0">
-      <H2 class="pb-2">Formules photos</H2>
-    </div>
-    <div class="container formules-container">
-      <div id="carousel-formules-photos">
-        <div class="formule">
-          <div class="formule-header">
-            <h4><span class="fw-bold">Cherry</span>Pink</h4>
-            <h6>Shooting vidéo promotionnelle</h6>
-            <h3 class="prix">160€</h3>
-          </div>
-          <div class="formule-body">
-            <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <hr>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/time-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 heures de tournage</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/montage-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">1 montage dynamique</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/file-text-edit.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 sessions de modification</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/sound-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">Prise de son «spectacle & concerts»</p>
-            </div>
-            <div class="btn-container pt-3">
-              <a href="" class="btn btn-pink second">je réserve</a>
-            </div>
-          </div>
-        </div>
-        <div class="formule">
-          <div class="formule-header">
-            <h4><span class="fw-bold">Cherry</span>Pink</h4>
-            <h6>Shooting vidéo promotionnelle</h6>
-            <h3 class="prix">160€</h3>
-          </div>
-          <div class="formule-body">
-            <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <hr>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/time-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 heures de tournage</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/montage-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">1 montage dynamique</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/file-text-edit.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 sessions de modification</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/sound-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">Prise de son «spectacle & concerts»</p>
-            </div>
-            <div class="btn-container pt-3">
-              <a href="" class="btn btn-pink second">je réserve</a>
-            </div>
-          </div>
-        </div>
-        <div class="formule">
-          <div class="formule-header">
-            <h4><span class="fw-bold">Cherry</span>Pink</h4>
-            <h6>Shooting vidéo promotionnelle</h6>
-            <h3 class="prix">160€</h3>
-          </div>
-          <div class="formule-body">
-            <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <hr>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/time-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 heures de tournage</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/montage-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">1 montage dynamique</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/file-text-edit.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 sessions de modification</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/sound-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">Prise de son «spectacle & concerts»</p>
-            </div>
-            <div class="btn-container pt-3">
-              <a href="" class="btn btn-pink second">je réserve</a>
-            </div>
-          </div>
-        </div>
-        <div class="formule">
-          <div class="formule-header">
-            <h4><span class="fw-bold">Cherry</span>Pink</h4>
-            <h6>Shooting vidéo promotionnelle</h6>
-            <h3 class="prix">160€</h3>
-          </div>
-          <div class="formule-body">
-            <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <hr>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/time-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 heures de tournage</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/montage-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">1 montage dynamique</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/file-text-edit.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 sessions de modification</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/sound-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">Prise de son «spectacle & concerts»</p>
-            </div>
-            <div class="btn-container pt-3">
-              <a href="" class="btn btn-pink second">je réserve</a>
-            </div>
-          </div>
-        </div>
-        <div class="formule">
-          <div class="formule-header">
-            <h4><span class="fw-bold">Cherry</span>Pink</h4>
-            <h6>Shooting vidéo promotionnelle</h6>
-            <h3 class="prix">160€</h3>
-          </div>
-          <div class="formule-body">
-            <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <hr>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/time-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 heures de tournage</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/montage-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">1 montage dynamique</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/file-text-edit.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 sessions de modification</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/sound-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">Prise de son «spectacle & concerts»</p>
-            </div>
-            <div class="btn-container pt-3">
-              <a href="" class="btn btn-pink second">je réserve</a>
-            </div>
-          </div>
-        </div>
-        <div class="formule">
-          <div class="formule-header">
-            <h4><span class="fw-bold">Cherry</span>Pink</h4>
-            <h6>Shooting vidéo promotionnelle</h6>
-            <h3 class="prix">160€</h3>
-          </div>
-          <div class="formule-body">
-            <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <hr>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/time-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 heures de tournage</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/montage-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">1 montage dynamique</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/file-text-edit.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 sessions de modification</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/sound-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">Prise de son «spectacle & concerts»</p>
-            </div>
-            <div class="btn-container pt-3">
-              <a href="" class="btn btn-pink second">je réserve</a>
-            </div>
-          </div>
-        </div>
-        <div class="formule">
-          <div class="formule-header">
-            <h4><span class="fw-bold">Cherry</span>Pink</h4>
-            <h6>Shooting vidéo promotionnelle</h6>
-            <h3 class="prix">160€</h3>
-          </div>
-          <div class="formule-body">
-            <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <hr>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/time-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 heures de tournage</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/montage-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">1 montage dynamique</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/file-text-edit.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 sessions de modification</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/sound-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">Prise de son «spectacle & concerts»</p>
-            </div>
-            <div class="btn-container pt-3">
-              <a href="" class="btn btn-pink second">je réserve</a>
-            </div>
-          </div>
-        </div>
-        <div class="formule">
-          <div class="formule-header">
-            <h4><span class="fw-bold">Cherry</span>Pink</h4>
-            <h6>Shooting vidéo promotionnelle</h6>
-            <h3 class="prix">160€</h3>
-          </div>
-          <div class="formule-body">
-            <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <hr>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/time-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 heures de tournage</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/montage-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">1 montage dynamique</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/file-text-edit.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">2 sessions de modification</p>
-            </div>
-            <div class="d-flex align-items-center py-2">
-              <img src="./assets/icons/sound-icon.svg" alt="">
-              <p class="fw-bold mb-0 ps-2 prestation-item">Prise de son «spectacle & concerts»</p>
-            </div>
-            <div class="btn-container pt-3">
-              <a href="" class="btn btn-pink second">je réserve</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="team" role="region">
-    <div class="container-fluid py-3 px-0">
-      <H2 class="pb-3">Team</H2>
 
-      <div id="carousel-team-polaroid" style="display: flex; flex-wrap: wrap;">
-          <div class="col-12 col-md-6 col-lg-4 team-member">
-            <img src="./assets/images/catherine_polaroid.png" alt="">
-            <p class="fonction">Vidéaste, photographe, cadrage, pré-production, DA, scénariste, monteur…</p>
-            <p class="point-fort fw-bold">Plus de XX clients</p>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 team-member">
-            <img src="./assets/images/battso_polaroid.png" alt="">
-            <p class="fonction">Vidéaste, photographe, cadrage, pré-production, DA, scénariste, monteur…</p>
-            <p class="point-fort fw-bold">Plus de XX clients</p>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 team-member">
-            <img src="./assets/images/bao_polaroid.png" alt="">
-            <p class="fonction">Vidéaste, photographe, cadrage, pré-production, DA, monteur…</p>
-            <p class="point-fort fw-bold">Plus de XX clients</p>
-          </div>
-        
-          <div class="col-12 col-md-6 col-lg-6 team-member fourth">
-            <img src="./assets/images/wini_polaroid.png" alt="">
-            <p class="fonction">Graphiste & Designer</p>
-            <p class="point-fort fw-bold">Plus de XX clients</p>
-          </div>
-          <div class="col-12 col-md-12 col-lg-6 team-member fifth">
-            <img src="./assets/images/yami_polaroid.png" alt="">
-            <p class="fonction">Designer & Intégratrice</p>
-            <p class="point-fort fw-bold">Unicef, Institut Pasteur, Fondation Abbé Pierre, etc</p>
-          </div>
-      </div>
+    
+      <h3>🚀 Team Tomodachis TV sur Twitch !</h3>
+      <p>Bienvenue en 2990, à bord du vaisseau temporel Tomodachis, une équipe de créatifs issus de différents domaines réunie pour vous divertir autour de Talks, Pop-culture & Rétrogaming.</p>
+      <p>Rejoins les Tomodachis pour foutre le feu dans le chat et amasser un maximum de ballz pour changer le cours des lives.</p>
+      <div class="row mt-3">
+        <div class="col-12 col-lg-4 text-center px-2">
+          <h4>🎮 MASTERKLASS</h4>
+          <h5 class="fw-bold text-uppercase mb-3">Tous les mercredis</h5>
+          <p class="px-3 text-justify"><span class="fw-bold">
+            Un thème pop culture nous est imposé via un rôle</span> (rédacteurs, programmateurs radio, TV, sélectionneurs, etc.).<span class="fw-bold"> Ensemble, nous créons une liste selon nos goûts, souvenirs et opinions.</span> Malgré l'esprit d'équipe, des bonus et malus génèrent souvent des tensions.
+            </p>
+        </div>
+        <div class="col-12 col-lg-4 text-center px-2">
+          <h4>🕹 PARTY PEOPLE</h4>
+          <h5 class="fw-bold text-uppercase mb-3">Tous les vendredis</h5>
+          <p class="px-3 text-justify"><span class="fw-bold">La team Tomodachis & leurs invités de prestige jouent à des jeux iconiques : PS2, Gamecube, jeux de soirées ou de société.
+            </span>Ce n’est évidemment qu’un prétexte pour échanger avec vous des anecdotes, souvenirs d’enfances et autres histoires sympas autour de la culture et du jeu !
+          </p>
+        </div>
+        <div class="col-12 col-lg-4 text-center px-2">
+          <h4>🎙️ wALK It LIKE I TALK IT</h4>
+          <h5 class="fw-bold text-uppercase mb-3">Un Lundi par mois</h5>
+          <p class="px-3 text-justify"><span class="fw-bold">Nous recevons un(e) artiste de notre entourage qui partagera avec vous son aventure, ses oeuvres, son mindset et sa créativité.</span>
 
+            Nous développons d’autres concepts pour faire du lundi un créneau plus récurrent et rendre plus doux vos débuts de semaine...
+            
+            Divertir le peuple est notre mission !</p>
+        </div>
+        <div class="col-12 text-center py-4 px-4">
+          <h4>✨ REJOINDRE L'AVENTURE DES TOMODACHIS</h4>
+          <h5 class="fw-bold text-uppercase mb-3">Retrouvez-nous aux liens suivants</h5>
+          <div class="social mt-4">
+            <a href="https://www.twitch.tv/teamtomodachis" target="_blank"><img src="./assets/icons/twitch_pink.svg" alt=""></a>
+            <a href="https://www.youtube.com/@teamtomodachis" target="_blank"><img src="./assets/icons/yt_pink.svg" alt=""></a>
+            <a href="https://www.instagram.com/teamtomodachis/" target="_blank"><img src="./assets/icons/ig_pink.svg" alt=""></a>
+            <a href="https://www.tiktok.com/teamtomodachis/" target="_blank"><img src="./assets/icons/tik_pink.svg" alt=""></a>
+
+          </div>
+        </div>
+
+      </div>
     </div>
+  </section>
+  <div class="citation" class="text-center">
+    <img src="./assets/images/citation1.png" alt="">
+    <a id="slot1" href="./hidden.html"></a>
   </div>
-</section>
+  <section id="tomodachis" role="region">
+    <div class="container-fluid py-3 px-0">
+      <H2 class="pb-2">SELECT YOUR TOMODACHIS</H2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 col-xl-4 d-flex align-items-center" id="characters-selection-container">
+          <ul class="nav" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="pills-jordan-tab" data-bs-toggle="pill" data-bs-target="#pills-jordan" role="tab" aria-controls="pills-jordan" aria-selected="true">
+                <img src="./assets/images/jordan-8-bits.png" alt="">
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-joey-tab" data-bs-toggle="pill" data-bs-target="#pills-joey" role="tab" aria-controls="pills-joey" aria-selected="false">
+
+          <img src="./assets/images/joey-8bit.png" alt="">
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-santiago-tab" data-bs-toggle="pill" data-bs-target="#pills-santiago" role="tab" aria-controls="pills-santiago" aria-selected="false">
+                <img src="./assets/images/santiago-8bit_v2.png" alt="">
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-laura-tab" data-bs-toggle="pill" data-bs-target="#pills-laura" role="tab" aria-controls="pills-laura" aria-selected="false">
+                <img src="./assets/images/laura-8bit.png" alt="">
+              </a>
+            </li>
+            <li class="nav-item locked" role="presentation">
+              <span class="nav-link">
+                <img src="./assets/images/locked-character.png" alt="">
+              </span>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-wini-tab" data-bs-toggle="pill" data-bs-target="#pills-wini" role="tab" aria-controls="pills-wini" aria-selected="false">
+                <img src="./assets/images/wini_8its.png" alt="">
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-fre-tab" data-bs-toggle="pill" data-bs-target="#pills-fre" role="tab" aria-controls="pills-fre" aria-selected="false">
+
+          <img src="./assets/images/fre-8bits_2.png" alt="">
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-battso-tab" data-bs-toggle="pill" data-bs-target="#pills-battso" role="tab" aria-controls="pills-battso" aria-selected="false">
+                <img src="./assets/images/battso-8bit.png" alt="">
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-bao-tab" data-bs-toggle="pill" data-bs-target="#pills-bao" role="tab" aria-controls="pills-bao" aria-selected="false">
+                <img src="./assets/images/bao-8bit.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-8 d-flex align-items-center">
+          <div class="tab-content w-100" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-jordan" role="tabpanel" aria-labelledby="pills-jordan-tab" tabindex="0">
+              <div class="row">
+                <div class="col-12 col-xl-6 character-img">
+                  <img src="../assets/images/jordan_ballz.png" alt="">
+                  <p class="character-name">
+                    CATHERINE
+                  </p>
+                </div>
+                <div class="col-12 col-xl-6 character-desc">
+                  <div class="infos-text">
+                    <p>arene : cinema</p>
+                    <p>type : feu</p>
+                    <p>stats :</p>
+                  </div>
+                  <div class="infos-progress">
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/camera.png" alt="" class="progress-icon"><progress max="100" value="100"></progress>
+                    </div>
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/donut.png" alt="" class="progress-icon"><progress max="100" value="50"></progress>
+                    </div>
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/cd.png" alt="" class="progress-icon"><progress max="100" value="80"></progress>
+                    </div>
+                  </div>
+                </div>                
+              </div>
+
+            </div>
+            <div class="tab-pane fade" id="pills-joey" role="tabpanel" aria-labelledby="pills-joey-tab" tabindex="0">
+              <div class="row">
+                <div class="col-12 col-xl-6 character-img">
+                  <img src="../assets/images/joey_ballz.png" alt="">
+                  <p class="character-name">
+                    CATHERINE
+                  </p>
+                </div>
+                <div class="col-12 col-xl-6 character-desc">
+                  <div class="infos-text">
+                    <p>arene : cour de recre</p>
+                    <p>type : roche, poison</p>
+                    <p>stats :</p>
+                  </div>
+                  <div class="infos-progress">
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/devil.png" alt="" class="progress-icon"><progress max="100" value="50"></progress>
+                    </div>
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/luffy.png" alt="" class="progress-icon"><progress max="100" value="80"></progress>
+                    </div>
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/gambling.png" alt="" class="progress-icon"><progress max="100" value="100"></progress>
+                    </div>
+                  </div>
+                </div>                
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-santiago" role="tabpanel" aria-labelledby="pills-santiago-tab" tabindex="0">
+              <div class="row">
+                <div class="col-12 col-xl-6 character-img">
+                  <img src="../assets/images/gago_ballz.png" alt="">
+                  <p class="character-name">
+                    CATHERINE
+                  </p>
+                </div>
+                <div class="col-12 col-xl-6 character-desc">
+                  <div class="infos-text">
+                    <p>arene : stade de foot</p>
+                    <p>type : acier</p>
+                    <p>stats :</p>
+                  </div>
+                  <div class="infos-progress">
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/football.png" alt="" class="progress-icon"><progress max="100" value="100"></progress>
+                    </div>
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/beer.png" alt="" class="progress-icon"><progress max="100" value="70"></progress>
+                    </div>
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/disco-ball.png" alt="" class="progress-icon"><progress max="100" value="60"></progress>
+                    </div>
+                  </div>
+                </div>                
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-laura" role="tabpanel" aria-labelledby="pills-laura-tab" tabindex="0">
+              <div class="row">
+                <div class="col-12 col-xl-6 character-img">
+                  <img src="../assets/images/laura_ballz.png" alt="">
+                  <p class="character-name">
+                    CATHERINE
+                  </p>
+                </div>
+                <div class="col-12 col-xl-6 character-desc">
+                  <div class="infos-text">
+                    <p>arene : manga café</p>
+                    <p>type : dragon</p>
+                    <p>stats :</p>
+                  </div>
+                  <div class="infos-progress">
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/cd.png" alt="" class="progress-icon"><progress max="100" value="90"></progress>
+                    </div>
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/luffy.png" alt="" class="progress-icon"><progress max="100" value="90"></progress>
+                    </div>
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/bisexual.png" alt="" class="progress-icon"><progress max="100" value="70"></progress>
+                    </div>
+                  </div>
+                </div>                
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-wini" role="tabpanel" aria-labelledby="pills-wini-tab" tabindex="0">
+              <div class="row">
+                <div class="col-12 col-xl-6 character-img">
+                  <img src="../assets/images/wini_ballz.png" alt="">
+                  <p class="character-name">
+                    CATHERINE
+                  </p>
+                </div>
+                <div class="col-12 col-xl-6 character-desc">
+                  <div class="infos-text">
+                    <p>arene : piste de danse</p>
+                    <p>type : éléctrique</p>
+                    <p>stats :</p>
+                  </div>
+                  <div class="infos-progress">
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/thunder.png" alt="" class="progress-icon"><progress max="100" value="100"></progress>
+                    </div>
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/handheld-game-console.png" alt="" class="progress-icon"><progress max="100" value="60"></progress>
+                    </div>
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/luffy.png" alt="" class="progress-icon"><progress max="100" value="70"></progress>
+                    </div>
+                  </div>
+                </div>                
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-fre" role="tabpanel" aria-labelledby="pills-fre-tab" tabindex="0">
+              <div class="row">
+                <div class="col-12 col-xl-6 character-img">
+                  <img src="../assets/images/fre_ballz.png" alt="">
+                  <p class="character-name">
+                    CATHERINE
+                  </p>
+                </div>
+                <div class="col-12 col-xl-6 character-desc">
+                  <div class="infos-text">
+                    <p>arene : plage</p>
+                    <p>type : fée</p>
+                    <p>stats :</p>
+                  </div>
+                  <div class="infos-progress">
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/crown.png" alt="" class="progress-icon"><progress max="100" value="70"></progress>
+                    </div>
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/smug.png" alt="" class="progress-icon"><progress max="100" value="80"></progress>
+                    </div>
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/cocktail.png" alt="" class="progress-icon"><progress max="100" value="100"></progress>
+                    </div>
+                  </div>
+                </div>                
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-battso" role="tabpanel" aria-labelledby="pills-battso-tab" tabindex="0">
+              <div class="row">
+                <div class="col-12 col-xl-6 character-img">
+                  <img src="../assets/images/battso_ballz.png" alt="">
+                  <p class="character-name">
+                    CATHERINE
+                  </p>
+                </div>
+                <div class="col-12 col-xl-6 character-desc">
+                  <div class="infos-text">
+                    <p>arene : plateau télé</p>
+                    <p>type : psy</p>
+                    <p>stats :</p>
+                  </div>
+                  <div class="infos-progress">
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/angry.png" alt="" class="progress-icon"><progress max="100" value="100"></progress>
+                    </div>
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/devil.png" alt="" class="progress-icon"><progress max="100" value="60"></progress>
+                    </div>
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/camera.png" alt="" class="progress-icon"><progress max="100" value="80"></progress>
+                    </div>
+                  </div>
+                </div>                
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-bao" role="tabpanel" aria-labelledby="pills-bao-tab" tabindex="0">
+              <div class="row">
+                <div class="col-12 col-xl-6 character-img">
+                  <img src="../assets/images/bao_ballz.png" alt="">
+                  <p class="character-name">
+                    CATHERINE
+                  </p>
+                </div>
+                <div class="col-12 col-xl-6 character-desc">
+                  <div class="infos-text">
+                    <p>arene : terrain de basket</p>
+                    <p>type : air</p>
+                    <p>stats :</p>
+                  </div>
+                  <div class="infos-progress">
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/basketball.png" alt="" class="progress-icon"><progress max="100" value="100"></progress>
+                    </div>
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/target.png" alt="" class="progress-icon"><progress max="100" value="70"></progress>
+                    </div>
+                    <div class="d-flex progress-flex">
+                      <img src="./assets/images/icons-pixels/camera.png" alt="" class="progress-icon"><progress max="100" value="90"></progress>
+                    </div>
+                  </div>
+                </div>                
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="citation" class="text-center">
+    <img src="./assets/images/citation2.png" alt="">
+    <a id="slot2" href="./hidden.html"></a>
+  </div>
+  <section id="past-events" role="region">
+    <div class="container-fluid py-3 px-0">
+      <H2 class="pb-2">PAST EVENTS</H2>
+    </div>
+    <div class="container">
+      <div id="carousel-projets">
+        <div class="projet">
+          <img src="./assets/images/la-prochaine-fois_affiche.png" alt="" class="image-projet">
+          <p class="nom-projet">La prochaine fois</p>
+          <p class="desc-projet">Court-métrage</p>
+        </div>
+        <div class="projet">
+          <img src="./assets/images/kurt-season_affiche.png" alt="" class="image-projet">
+          <p class="nom-projet">KURT SEASON, the movie</p>
+          <p class="desc-projet">Court-métrage</p>
+        </div>
+        <div class="projet">
+          <img src="./assets/images/lost&found_affiche.png" alt="" class="image-projet">
+          <p class="nom-projet">lost & found, hell on earth</p>
+          <p class="desc-projet">Court-métrage</p>
+        </div>
+        <div class="projet">
+          <img src="./assets/images/negatif+the-eyez-chico.png" alt="" class="image-projet">
+          <p class="nom-projet">négatif + : the eyez chico</p>
+          <p class="desc-projet">Court-métrage</p>
+        </div>
+      </div>
+      <div class="btn-container">
+        <a href="./projets.html" class="btn btn-pink">Tous les projets</a>
+      </div>
+    </div>
+  </section>
+  <section id="shop" role="region">
+    <div class="container-fluid py-3 px-0">
+      <H2 class="pb-2">SHOP</H2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-lg-4 col-xl-3 item-container">
+          <div class="item">
+            <img class="item-img" src="./assets/images/wireless-headphone.png" alt="">
+            <p class="item-nom">Nom du produit</p>
+            <p class="prix">49,00€</p>
+              <a href="./projets.html" class="btn btn-pink">Acheter</a>
+
+          </div>
+          </div>
+        <div class="col-6 col-lg-4 col-xl-3 item-container">
+          <div class="item">
+            <img class="item-img" src="./assets/images/soul.png" alt="">
+            <p class="item-nom">Nom du produit</p>
+            <p class="prix">49,00€</p>
+              <a href="./projets.html" class="btn btn-pink">Acheter</a>
+          </div>
+          </div>
+        <div class="col-6 col-lg-4 col-xl-3 item-container">
+          <div class="item">
+            <img class="item-img" src="./assets/images/cat.png" alt="">
+            <p class="item-nom">Nom du produit</p>
+            <p class="prix">49,00€</p>
+              <a href="./projets.html" class="btn btn-pink">Acheter</a>
+
+          </div>
+          </div>
+        <div class="col-6 col-lg-4 col-xl-3 item-container">
+          <div class="item">
+            <img class="item-img" src="./assets/images/VHS_Tapes_1920x.png" alt="">
+            <p class="item-nom">Nom du produit</p>
+            <p class="prix">49,00€</p>
+              <a href="./projets.html" class="btn btn-pink">Acheter</a>
+
+          </div>
+          </div>
+        <div class="col-6 col-lg-4 col-xl-3 item-container">
+          <div class="item">
+            <img class="item-img" src="./assets/images/cat.png" alt="">
+            <p class="item-nom">Nom du produit</p>
+            <p class="prix">49,00€</p>
+              <a href="./projets.html" class="btn btn-pink">Acheter</a>
+
+          </div>
+          </div>
+        <div class="col-6 col-lg-4 col-xl-3 item-container">
+          <div class="item">
+            <img class="item-img" src="./assets/images/VHS_Tapes_1920x.png" alt="">
+            <p class="item-nom">Nom du produit</p>
+            <p class="prix">49,00€</p>
+              <a href="./projets.html" class="btn btn-pink">Acheter</a>
+
+          </div>
+          </div>
+        <div class="col-6 col-lg-4 col-xl-3 item-container">
+          <div class="item">
+            <img class="item-img" src="./assets/images/wireless-headphone.png" alt="">
+            <p class="item-nom">Nom du produit</p>
+            <p class="prix">49,00€</p>
+              <a href="./projets.html" class="btn btn-pink">Acheter</a>
+
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-4 col-xl-3 item-container">
+          <div class="item">
+            <img class="item-img" src="./assets/images/soul.png" alt="">
+            <p class="item-nom">Nom du produit</p>
+            <p class="prix">49,00€</p>
+            <a href="./projets.html" class="btn btn-pink">Acheter</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
 <footer class="active" id="contact">
   <div class="container-fluid py-3 px-0" id="contact">
     <H2 class="pb-2">CONTACT</H2>
@@ -727,8 +588,8 @@
   <p class="mb-1">Retrouvez-moi sur les réseaux sociaux</p>
   <div class="social">
     <a href="https://www.instagram.com/workingonmyname/" target="_blank"><img src="./assets/icons/ig_dark.svg" alt=""></a>
-    <a href="https://www.twitch.tv/workingonmyname"><img src="./assets/icons/twitch_dark.svg" alt=""></a>
-    <a href="https://www.youtube.com/@workingonmyname"><img src="./assets/icons/yt_dark.svg" alt=""></a>
+    <a href="https://www.twitch.tv/workingonmyname" target="_blank"><img src="./assets/icons/twitch_dark.svg" alt=""></a>
+    <a href="https://www.youtube.com/@workingonmyname" target="_blank"><img src="./assets/icons/yt_dark.svg" alt=""></a>
   </div>
   <p class="py-3 credits">© 2024 - Jordan CATHERINE - "Workingonmyname"<br>
     Réalisation par Laura Latuillerie
@@ -741,10 +602,13 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="./assets/js/loading.js" ></script>
-<script src="./assets/js/navbar-scroll.js" ></script>
-<script src="./assets/js/carousel.js" ></script>
-<script src="./assets/js/gallery.js" ></script>
+<script src="./assets/js/loading.js"></script>
+<script src="./assets/js/navbar-scroll.js"></script>
+<script src="./assets/js/carousel.js"></script>
+<script src="./assets/js/gallery.js"></script>
+<script src="./assets/js/youtube.js"></script>
+<script src="./assets/js/hidden.js"></script>
+
 
 </body>
 </html>
