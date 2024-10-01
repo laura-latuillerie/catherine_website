@@ -172,12 +172,8 @@
 
   video{
     max-width: 100%;
-
-    @media screen and (min-width: 768px){
-      max-width: 80%;
-    }
     @media screen and (min-width: 992px){
-      max-width: 70%;
+      max-width: 80%;
     }
     @media screen and (min-width: 1200px){
       max-width: 768px;
@@ -185,9 +181,14 @@
   }    
 
   #twitch-container{
-    padding: 60px 50px 50px;
+    padding: 70px 50px 50px;
     background: @darkGrey;
     border-radius: 30px;
+    @media screen and (max-width:768px) {
+      border-radius: 0;
+      max-width: unset;
+      padding: 70px 30px 50px;
+    }
     h3, h4{
       font-family: 'Lemon', sans-serif;
       .pink;
@@ -198,6 +199,11 @@
       max-width: 768px;
       margin: 0 auto;
       font-size: 16px;
+      &.px-3.responsive{
+        @media screen and (max-width:576px) {
+          padding: 0;
+        }
+      }
     }
     .social{
       a{
@@ -389,9 +395,11 @@
   #carousel-projets{
     .slick-prev {
       left: 0;
+      z-index: 9;
     }
     .slick-next {
       right: 0;
+      z-index: 9;
     }
     .slick-prev:before{
       content: url(../icons/arrow-prev.png);
@@ -409,7 +417,10 @@
         max-width: 200px;
         margin-bottom: 20px;
         @media screen and (min-width:992px) {
-          max-width: 300px;
+          max-width: 250px;
+        }
+        @media screen and (min-width:1200px) {
+          max-width: 280px;
         }
       }
       .nom-projet{

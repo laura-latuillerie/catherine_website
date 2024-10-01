@@ -343,6 +343,22 @@ header nav.navbar .offcanvas .navbar-nav-offcanvas .nav-link {
     line-height: 1em;
   }
 }
+#top-perso #top-mobile {
+  display: block;
+}
+@media screen and (min-width: 576px) {
+  #top-perso #top-mobile {
+    display: none;
+  }
+}
+#top-perso #top-desk {
+  display: none;
+}
+@media screen and (min-width: 576px) {
+  #top-perso #top-desk {
+    display: block;
+  }
+}
 .sticky-btn {
   position: fixed;
   bottom: 30px;
@@ -570,6 +586,12 @@ section#videos-portfolio .categorie-video a:hover {
 section#formules-videos .formules-container #carousel-formules-videos {
   margin: 0 20px 30px;
 }
+section#formules-videos .formules-container #carousel-formules-videos .slick-prev {
+  z-index: 9;
+}
+section#formules-videos .formules-container #carousel-formules-videos .slick-next {
+  z-index: 9;
+}
 section#formules-videos .formules-container #carousel-formules-videos .slick-prev:before {
   content: url(../icons/prev-arrow.svg);
 }
@@ -620,6 +642,12 @@ section#formules-videos .formules-container #carousel-formules-videos .formule .
 }
 section#formules-photos .formules-container #carousel-formules-photos {
   margin: 0 20px 30px;
+}
+section#formules-photos .formules-container #carousel-formules-photos .slick-prev {
+  z-index: 9;
+}
+section#formules-photos .formules-container #carousel-formules-photos .slick-next {
+  z-index: 9;
 }
 section#formules-photos .formules-container #carousel-formules-photos .slick-prev:before {
   content: url(../icons/prev-arrow.svg);
@@ -1124,14 +1152,9 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
 #twitch video {
   max-width: 100%;
 }
-@media screen and (min-width: 768px) {
-  #twitch video {
-    max-width: 80%;
-  }
-}
 @media screen and (min-width: 992px) {
   #twitch video {
-    max-width: 70%;
+    max-width: 80%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1140,9 +1163,16 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   }
 }
 #twitch #twitch-container {
-  padding: 60px 50px 50px;
+  padding: 70px 50px 50px;
   background: #222222;
   border-radius: 30px;
+}
+@media screen and (max-width: 768px) {
+  #twitch #twitch-container {
+    border-radius: 0;
+    max-width: unset;
+    padding: 70px 30px 50px;
+  }
 }
 #twitch #twitch-container h3,
 #twitch #twitch-container h4 {
@@ -1155,6 +1185,11 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   max-width: 768px;
   margin: 0 auto;
   font-size: 16px;
+}
+@media screen and (max-width: 576px) {
+  #twitch #twitch-container p.px-3.responsive {
+    padding: 0;
+  }
 }
 #twitch #twitch-container .social a {
   transition: all 0.3s ease-in-out;
@@ -1349,9 +1384,11 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
 }
 #past-events #carousel-projets .slick-prev {
   left: 0;
+  z-index: 9;
 }
 #past-events #carousel-projets .slick-next {
   right: 0;
+  z-index: 9;
 }
 #past-events #carousel-projets .slick-prev:before {
   content: url(../icons/arrow-prev.png);
@@ -1371,7 +1408,12 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
 }
 @media screen and (min-width: 992px) {
   #past-events #carousel-projets .projet img {
-    max-width: 300px;
+    max-width: 250px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #past-events #carousel-projets .projet img {
+    max-width: 280px;
   }
 }
 #past-events #carousel-projets .projet .nom-projet {
