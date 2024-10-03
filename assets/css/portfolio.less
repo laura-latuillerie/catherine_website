@@ -156,15 +156,22 @@ section#formules-photos{
 
 section#photos-portfolio{
 padding: 20px 5%;
-overflow-x: hidden;
-
+overflow-x: scroll;
+-ms-overflow-style: none;  /* Internet Explorer 10+ */
+scrollbar-width: none;
+&::-webkit-scrollbar { 
+  display: none; 
+}
+@media screen and (min-width:992px) {
+  overflow-x: hidden;
+}
 .gallery {
  display: grid;
  grid-template-columns: repeat(9, 1fr);
  grid-template-rows: repeat(5, 1fr);
  gap: 10px;
  width: 250vw;
-  @media screen and (min-width:992px) {
+ @media screen and (min-width:992px) {
     width: 100%;
   }
   @media screen and (min-width: 1200px) {
@@ -172,14 +179,13 @@ overflow-x: hidden;
     margin: 0 auto;
   }
   >*{
-   height: 140px;
+   height: 180px;
    background-size: cover;
    @media screen and (min-width:992px) {
     height: 220px;
     background-position: center center;
   }
   }
-
 
  .div1 {
   grid-column: span 3 / span 3;
@@ -221,6 +227,7 @@ overflow-x: hidden;
   grid-column-start: 1;
   grid-row-start: 4;
   background-image: url(../images/img-mosaic/img-mosaic-6.jpg);
+  background-position: center center;
 
  }
  
@@ -236,6 +243,7 @@ overflow-x: hidden;
   grid-column-start: 2;
   grid-row-start: 5;
   background-image: url(../images/img-mosaic/img-mosaic-8.jpg);
+  background-position: center center;
 
  }
  
@@ -295,6 +303,7 @@ overflow-x: hidden;
   grid-column-start: 4;
   grid-row-start: 5;
   background-image: url(../images/img-mosaic/img-mosaic-16.jpg);
+  background-position: center center;
 
  }
  
@@ -333,6 +342,8 @@ overflow-x: hidden;
   grid-column-start: 8;
   grid-row-start: 3;
   background-image: url(../images/img-mosaic/img-mosaic-21.jpg);
+  background-position: center center;
+
 
  }
  
@@ -349,6 +360,8 @@ overflow-x: hidden;
   grid-column-start: 7;
   grid-row-start: 5;
   background-image: url(../images/img-mosaic/img-mosaic-23.jpg);
+  background-position: center center;
+
 
  }
  

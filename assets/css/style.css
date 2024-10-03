@@ -699,7 +699,18 @@ section#formules-photos .formules-container #carousel-formules-photos .formule .
 }
 section#photos-portfolio {
   padding: 20px 5%;
-  overflow-x: hidden;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+}
+section#photos-portfolio::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  section#photos-portfolio {
+    overflow-x: hidden;
+  }
 }
 section#photos-portfolio .gallery {
   display: grid;
@@ -720,7 +731,7 @@ section#photos-portfolio .gallery {
   }
 }
 section#photos-portfolio .gallery > * {
-  height: 140px;
+  height: 180px;
   background-size: cover;
 }
 @media screen and (min-width: 992px) {
@@ -760,6 +771,7 @@ section#photos-portfolio .gallery .div6 {
   grid-column-start: 1;
   grid-row-start: 4;
   background-image: url(../images/img-mosaic/img-mosaic-6.jpg);
+  background-position: center center;
 }
 section#photos-portfolio .gallery .div7 {
   grid-column-start: 1;
@@ -771,6 +783,7 @@ section#photos-portfolio .gallery .div8 {
   grid-column-start: 2;
   grid-row-start: 5;
   background-image: url(../images/img-mosaic/img-mosaic-8.jpg);
+  background-position: center center;
 }
 section#photos-portfolio .gallery .div9 {
   grid-column-start: 4;
@@ -816,6 +829,7 @@ section#photos-portfolio .gallery .div16 {
   grid-column-start: 4;
   grid-row-start: 5;
   background-image: url(../images/img-mosaic/img-mosaic-16.jpg);
+  background-position: center center;
 }
 section#photos-portfolio .gallery .div17 {
   grid-column: span 3 / span 3;
@@ -844,6 +858,7 @@ section#photos-portfolio .gallery .div21 {
   grid-column-start: 8;
   grid-row-start: 3;
   background-image: url(../images/img-mosaic/img-mosaic-21.jpg);
+  background-position: center center;
 }
 section#photos-portfolio .gallery .div22 {
   grid-column: span 3 / span 3;
@@ -856,6 +871,7 @@ section#photos-portfolio .gallery .div23 {
   grid-column-start: 7;
   grid-row-start: 5;
   background-image: url(../images/img-mosaic/img-mosaic-23.jpg);
+  background-position: center center;
 }
 section#photos-portfolio .gallery .div24 {
   grid-column-start: 9;
@@ -1477,4 +1493,35 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
 #shop .item-container .item .prix {
   font-size: 30px;
   font-weight: bold;
+}
+.modal-dialog {
+  max-width: 800px;
+  margin: 30px auto;
+}
+.modal-dialog .modal-content {
+  background-color: #fac0e6;
+  border: 2px solid #fac0e6;
+}
+.modal-dialog .modal-body {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.27198%;
+}
+.modal-dialog .modal-body iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.modal-dialog .close {
+  position: absolute;
+  right: -30px;
+  top: 0;
+  z-index: 999;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #fff;
+  opacity: 1;
 }

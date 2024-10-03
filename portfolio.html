@@ -113,9 +113,9 @@
           <div class="col-12 col-md-6 categorie-video" style="background-image: url(./assets/images/clips-preview.png);">
             <div class="content-inside">
               <h3>Clips</h3>
-              <button type="button" class="link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <a type="button" class="link-light link-offset-4 link-underline-opacity-25 link-underline-opacity-100-hover link-underline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Launch demo modal
-              </button>
+              </a>
               <span class="mx-1"></span>
               <a href="#" class="link-light link-offset-4 link-underline-opacity-25 link-underline-opacity-100-hover link-underline-light">Voir la playlist
               </a>
@@ -757,14 +757,14 @@
         </p>
       </footer>
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+
+            <div class="d-flex justify-content-end">
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/5FrhtahQiRc?si=SdAD4eIfUjrYaXEK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="modal-body d-flex flex-column align-items-center">
+              <iframe src="https://www.youtube.com/embed/5FrhtahQiRc?si=SdAD4eIfUjrYaXEK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -778,7 +778,6 @@
     <script src="./assets/js/loading.js" ></script>
     <script src="./assets/js/navbar-scroll.js" ></script>
     <script src="./assets/js/carousel.js" ></script>
-    <script src="./assets/js/gallery.js" ></script>
     
   </body>
   </html>
