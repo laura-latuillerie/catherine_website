@@ -1669,3 +1669,79 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   transform: translateY(-50%);
   left: 0;
 }
+#prochaine-fois,
+#kurt,
+#lost,
+#negatif {
+  padding: 50px 0;
+}
+#prochaine-fois .affiche,
+#kurt .affiche,
+#lost .affiche,
+#negatif .affiche {
+  max-width: 300px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  #prochaine-fois .affiche,
+  #kurt .affiche,
+  #lost .affiche,
+  #negatif .affiche {
+    max-width: 450px;
+  }
+}
+#prochaine-fois .left-responsive,
+#kurt .left-responsive,
+#lost .left-responsive,
+#negatif .left-responsive {
+  text-align: center;
+  margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
+  #prochaine-fois .left-responsive,
+  #kurt .left-responsive,
+  #lost .left-responsive,
+  #negatif .left-responsive {
+    text-align: left;
+  }
+}
+#prochaine-fois .right-responsive,
+#kurt .right-responsive,
+#lost .right-responsive,
+#negatif .right-responsive {
+  text-align: center;
+  margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
+  #prochaine-fois .right-responsive,
+  #kurt .right-responsive,
+  #lost .right-responsive,
+  #negatif .right-responsive {
+    text-align: right;
+  }
+}
+#prochaine-fois h3,
+#kurt h3,
+#lost h3,
+#negatif h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
+}
+#prochaine-fois p,
+#kurt p,
+#lost p,
+#negatif p {
+  font-size: 16px;
+}
+#prochaine-fois .row,
+#kurt .row,
+#lost .row,
+#negatif .row {
+  justify-content: space-between;
+}
+#kurt,
+#negatif {
+  background: #fac0e6;
+  color: #000000;
+}
