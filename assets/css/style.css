@@ -362,7 +362,7 @@ header nav.navbar .offcanvas .navbar-nav-offcanvas .nav-link {
 .sticky-btn {
   position: fixed;
   bottom: 30px;
-  left: 20px;
+  right: 20px;
   z-index: 100;
 }
 .sticky-btn img {
@@ -371,7 +371,6 @@ header nav.navbar .offcanvas .navbar-nav-offcanvas .nav-link {
 }
 @media screen and (min-width: 992px) {
   .sticky-btn {
-    left: unset;
     right: 20px;
   }
 }
@@ -883,6 +882,12 @@ section#photos-portfolio .gallery .div24 {
     max-width: 960px;
   }
 }
+section#team .container-fluid #carousel-team-polaroid .slick-prev {
+  z-index: 9;
+}
+section#team .container-fluid #carousel-team-polaroid .slick-next {
+  z-index: 9;
+}
 section#team .container-fluid #carousel-team-polaroid .slick-prev:before {
   content: url(../icons/prev-arrow.svg);
 }
@@ -919,7 +924,7 @@ section#team .container-fluid #carousel-team-polaroid .team-member {
 }
 section#team .container-fluid #carousel-team-polaroid .team-member p {
   max-width: 300px;
-  padding: 5px 10px;
+  padding: 0;
   margin-bottom: 0;
 }
 section#team .container-fluid #carousel-team-polaroid .team-member img {
@@ -927,9 +932,16 @@ section#team .container-fluid #carousel-team-polaroid .team-member img {
   margin: 0 auto;
 }
 section#team .container-fluid #carousel-team-polaroid .team-member .link-profile {
+  margin-top: 10px;
   display: inline-block;
   text-transform: uppercase;
-  color: #fac0e6;
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
 }
 section#team .container-fluid #carousel-team-polaroid .team-member .fonction,
 section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
@@ -1502,28 +1514,28 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   font-size: 30px;
   font-weight: bold;
 }
-.modal-dialog {
+.modal-dialog.modal-showreel {
   max-width: 800px;
   margin: 30px auto;
 }
-.modal-dialog .modal-content {
+.modal-dialog.modal-showreel .modal-content {
   background-color: #fac0e6;
   border: 2px solid #fac0e6;
 }
-.modal-dialog .modal-body {
+.modal-dialog.modal-showreel .modal-body {
   position: relative;
   width: 100%;
   height: 0;
   padding-bottom: 56.27198%;
 }
-.modal-dialog .modal-body iframe {
+.modal-dialog.modal-showreel .modal-body iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.modal-dialog .close {
+.modal-dialog.modal-showreel .close {
   position: absolute;
   right: -30px;
   top: 0;
@@ -1532,4 +1544,92 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   font-weight: normal;
   color: #fff;
   opacity: 1;
+}
+#playlist .container {
+  width: 768px;
+  margin: 0 auto;
+}
+#playlist img {
+  max-width: 100%;
+  height: auto;
+}
+#playlist .embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+#playlist .embed-container iframe,
+#playlist .embed-container object,
+#playlist .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#playlist .video-player__playing {
+  margin-bottom: 1.000em;
+}
+#playlist .video-player__thumbs {
+  overflow: hidden;
+}
+#playlist .video-thumb {
+  float: left;
+  width: 23.5%;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 13%;
+  margin-bottom: 0.375em;
+  cursor: pointer;
+}
+#playlist .video-thumb:not(:last-child) {
+  margin-right: 2%;
+}
+#playlist .video-thumb.active {
+  cursor: default;
+}
+#playlist .video-thumb:before,
+#playlist .video-thumb:after {
+  display: block;
+  position: absolute;
+  transition: all 250ms ease-out;
+  z-index: 1;
+}
+#playlist .video-thumb:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(247, 148, 30, 0);
+}
+#playlist .video-thumb.active:before {
+  background: rgba(247, 148, 30, 0.75);
+}
+#playlist .video-thumb:not(.active):hover:before {
+  background: rgba(247, 148, 30, 0.3);
+}
+#playlist .video-thumb:after {
+  content: "\f144";
+  font-family: "FontAwesome";
+  top: 50%;
+  left: 50%;
+  margin: -0.458em 0 0 -0.5em;
+  color: rgba(255, 255, 255, 0);
+  font-size: 3.000em;
+  line-height: 1;
+}
+#playlist .video-thumb.active:after {
+  color: #ffffff;
+}
+#playlist .video-thumb img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
 }
