@@ -1164,6 +1164,20 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
     width: 1024px;
   }
 }
+#tele-perso .video-container #player-btns {
+  position: absolute;
+  z-index: 9;
+  bottom: -50px;
+}
+#tele-perso .video-container #player-btns button {
+  background-color: none;
+  background: none;
+  border: none;
+}
+#tele-perso .video-container #player-btns img {
+  height: 40px;
+  width: 40px;
+}
 #twitch {
   padding: 80px 0 50px;
   text-align: center;
