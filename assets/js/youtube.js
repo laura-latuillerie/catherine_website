@@ -40,19 +40,43 @@ function onYouTubeIframeAPIReady() {
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
   event.target.playVideo();
-  player.mute();
-  btnUnmute.addEventListener('click', () => (player.unMute()));
-  btnMute.addEventListener('click', () => (player.mute()));
-  btnTurn.addEventListener('click', function () {
-    if(player.getPlayerState()==1){ //Returns true if video is playing
-      player.pauseVideo();
-    }else{
-      player.playVideo(); 
-    }
-  });
 }
 
 function stopVideo() {
   player.stopVideo();
 }
 
+
+btnUnmute.addEventListener('click', () => (player.unMute()));
+btnMute.addEventListener('click', () => (player.mute()));
+btnTurn.addEventListener('click', function () {
+  if(player.getPlayerState()==1){ //Returns true if video is playing
+    player.pauseVideo();
+  }else{
+    player.playVideo(); 
+  }
+});
+btnNext.addEventListener('click', function () {
+  let playerId = player.playerInfo.playlistId;
+  let currentIndex = lists.indexOf(playerId);
+  if (currentIndex === 4){
+    playerId = lists[0];
+  }
+  else{
+    playerId = lists[currentIndex + 1];
+  }
+  player.g.src = `https://www.youtube.com/embed/?autoplay=1&controls=0&rel=0&ecver=2&showinfo=0&disablekb=1&enablejsapi=1&listType=playlist&list=${playerId}&origin=http%3A%2F%2Flocalhost%3A5500&widgetid=1`
+  player.playVideo(); 
+});
+btnPrev.addEventListener('click', function () {
+  let playerId = player.playerInfo.playlistId;
+  let currentIndex = lists.indexOf(playerId);
+  if (currentIndex === 0){
+    playerId = lists[lists.length - 1];
+  }
+  else{
+    playerId = lists[currentIndex - 1];
+  }
+  player.g.src = `https://www.youtube.com/embed/?autoplay=1&controls=0&rel=0&ecver=2&showinfo=0&disablekb=1&enablejsapi=1&listType=playlist&list=${playerId}&origin=http%3A%2F%2Flocalhost%3A5500&widgetid=1`
+  player.playVideo(); 
+});
