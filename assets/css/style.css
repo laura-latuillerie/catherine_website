@@ -639,6 +639,12 @@ section#formules-videos .formules-container #carousel-formules-videos .formule .
     font-size: 13px;
   }
 }
+section#formules-videos .formules-container #carousel-formules-videos .formule:last-child .formule-body .formule-desc {
+  height: 180px;
+}
+section#formules-videos .formules-container #carousel-formules-videos .formule:last-child .formule-body .formule-options {
+  height: 130px;
+}
 section#formules-photos .formules-container #carousel-formules-photos {
   margin: 0 20px 30px;
 }
