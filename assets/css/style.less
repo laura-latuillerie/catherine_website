@@ -69,6 +69,15 @@
 @white: #fff;
 @black: #000;
 @darkGrey: #222222;
+@ultra: #FF6FFF;
+@barbie: #FB419A;
+@persian: #F783C0;
+@magenta: #D93A89;
+@cherry: #C7155F;
+@lightGrey: #e0e0e0;
+@oyster: #EFD0D0;
+@candy: #F59BC3;
+@pastel: #FEC7D4;
 
 // VARIABLES - Fonts
 .satoshi{
@@ -89,6 +98,40 @@
   color: @pink;
 }
 
+.white{
+  color: @white;
+}
+
+.bg_ultra{
+  background: @ultra;
+}
+
+.bg_barbie{
+  background: @barbie;
+}
+
+.bg_persian{
+  background: @persian;
+}
+.bg_magenta{
+  background: @magenta;
+}
+.bg_cherry{
+  background: @cherry;
+}
+.bg_lightGrey{
+  background: @lightGrey;
+}
+
+.bg_oyster{
+  background: @oyster;
+}
+.bg_candy{
+  background: @candy;
+}
+.bg_pastel{
+  background: @pastel;
+}
 //BTN
 .btn-pink{
   .urbanist;
@@ -101,6 +144,7 @@
     color: @white;
     border: 1px solid @white;
   }
+
 }
 
 .btn-pink.second{
@@ -115,7 +159,35 @@
     border: 1px solid @black;
     background-color: none;
   }
+  &.cherry{
+    .bg_cherry;
+    .white;
+  }
+  &.magenta{
+    .bg_magenta;
+    .white;
+  }
+  &.barbie{
+    .bg_barbie;
+    .white;
+  }
+  &.persian{
+    .bg_persian;
+  }
+  &.ultra{
+    .bg_ultra;
+  }
+  &.oyster{
+    .bg_oyster;
+  }
+  &.pastel{
+    .bg_pastel;
+  }
+  &.candy{
+    .bg_candy;
+  }
 }
+
 .gelatine {
   animation: gelatine 0.5s infinite;
 }
@@ -138,7 +210,7 @@ body{
   font-family: 'urbanist';
   h2{
     font-family: 'Lemon', sans-serif;
-    color: @pink;
+    color: @white;
     font-size: 30px;
     @media screen and (min-width: 992px) {
       font-size: 46px;

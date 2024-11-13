@@ -54,7 +54,6 @@ section#formules-videos{
    color: @black;
    .urbanist;
    .formule-header{
-    background-color: @pink;
     border-radius: 10px 10px 0 0;
     padding: 15px 0;
     h4, h6, h3{
@@ -71,6 +70,13 @@ section#formules-videos{
       line-height: 18px;
      &.formule-desc{
       height: 130px;
+      margin-bottom: 0;
+      &.ultra{
+        height: 308px;
+      }
+      &.options{
+        height: 308px;
+      }
      }
     }
     .formule-options{
@@ -83,25 +89,27 @@ section#formules-videos{
       font-size: 13px;
      }
     }
-   }
-   &:last-child{
-    .formule-body{
-      .formule-desc{
-        height: 180px;
-      }
-      .formule-options{
-        height: 130px;
-      }
+    ul.formule-desc{
+      text-align: left;
+      list-style: "👉🏾 ";
+      padding-inline-start: 30px;
+      display: inline-block;
+      height: 292px;
     }
    }
-  } 
+
   }
 
  }
 }
-
+}
 section#formules-photos{
+
  .formules-container{
+  @media screen and (min-width:1200px) {
+    
+    max-width: 992px;
+  }
   #carousel-formules-photos{
    margin: 0 20px 30px;
 
@@ -111,7 +119,6 @@ section#formules-photos{
   .slick-next {
     z-index: 9;
   }
-
 
    .slick-prev:before{
     content: url(../icons/prev-arrow.svg);
@@ -125,10 +132,8 @@ section#formules-photos{
    border-radius: 20px;
    padding: 15px;
    color: @black;
-   width: 320px;
    .urbanist;
    .formule-header{
-    background-color: @pink;
     border-radius: 10px 10px 0 0;
     padding: 15px 0;
     h4, h6, h3{
@@ -139,15 +144,25 @@ section#formules-photos{
     background-color: @white;
     border-radius: 0 0 10px 10px;
     padding: 20px;
-      p{
+    p{
+      display: block;
       font-size: 14px;
       line-height: 18px;
-        &.formule-desc{
-          height: 130px;
-        }
+     &.formule-desc{
+      height: 130px;
+      margin-bottom: 0;
+      &.ultra{
+        height: 308px;
       }
-      .formule-options{
-        height: 180px;
+      &.options{
+        height: 308px;
+      }
+     }
+    }
+    .formule-options{
+      height: 180px;
+      img{
+        width: 30px;
       }
     }
     .prestation-item{
@@ -157,9 +172,18 @@ section#formules-photos{
       font-size: 13px;
      }
     }
+    ul.formule-desc{
+      text-align: left;
+      list-style: "👉🏾 ";
+      padding-inline-start: 30px;
+      display: inline-block;
+      height: 292px;
+    }
    }
-  }   
+
   }
+ }
+}
 
 }
 
