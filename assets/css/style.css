@@ -1421,7 +1421,7 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   }
 }
 #tomodachis #characters-selection-container ul.nav .nav-item.locked .nav-link {
-  cursor: not-allowed;
+  cursor: help;
 }
 #tomodachis #characters-selection-container ul.nav .nav-item.locked .nav-link.active img,
 #tomodachis #characters-selection-container ul.nav .nav-item.locked .nav-link:hover img {
