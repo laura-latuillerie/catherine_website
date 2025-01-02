@@ -110,33 +110,6 @@
   border: 1px solid #000000;
   background-color: none;
 }
-.btn-pink.second.cherry {
-  background: #c7155f;
-  color: #ffffff;
-}
-.btn-pink.second.magenta {
-  background: #d93a89;
-  color: #ffffff;
-}
-.btn-pink.second.barbie {
-  background: #fb419a;
-  color: #ffffff;
-}
-.btn-pink.second.persian {
-  background: #f783c0;
-}
-.btn-pink.second.ultra {
-  background: #ff6fff;
-}
-.btn-pink.second.oyster {
-  background: #efd0d0;
-}
-.btn-pink.second.pastel {
-  background: #fec7d4;
-}
-.btn-pink.second.candy {
-  background: #f59bc3;
-}
 .gelatine {
   animation: gelatine 0.5s infinite;
 }
@@ -666,6 +639,7 @@ section#formules-videos .formules-container #carousel-formules-videos .formule {
 section#formules-videos .formules-container #carousel-formules-videos .formule .formule-header {
   border-radius: 10px 10px 0 0;
   padding: 15px 0;
+  background: #fac0e6;
 }
 section#formules-videos .formules-container #carousel-formules-videos .formule .formule-header h4,
 section#formules-videos .formules-container #carousel-formules-videos .formule .formule-header h6,
@@ -741,6 +715,7 @@ section#formules-photos .formules-container #carousel-formules-photos .formule {
 section#formules-photos .formules-container #carousel-formules-photos .formule .formule-header {
   border-radius: 10px 10px 0 0;
   padding: 15px 0;
+  background: #fac0e6;
 }
 section#formules-photos .formules-container #carousel-formules-photos .formule .formule-header h4,
 section#formules-photos .formules-container #carousel-formules-photos .formule .formule-header h6,
@@ -969,6 +944,9 @@ section#photos-portfolio .gallery .div24 {
   grid-column-start: 9;
   grid-row-start: 5;
   background-image: url(../images/img-mosaic/img-mosaic-24.png);
+}
+section#team {
+  padding-bottom: 50px;
 }
 @media screen and (min-width: 1200px) {
   section#team .container-fluid {
