@@ -32,7 +32,12 @@ section#formules-videos{
  .formules-container{
   #carousel-formules-videos{
    margin: 0 20px 30px;
-
+    .btn-pink{
+      &:hover{
+        color: @black;
+        border: 1px solid @black;
+      }
+    }
    .slick-prev {
     z-index: 9;
   }
@@ -105,10 +110,10 @@ section#formules-videos{
 }
 }
 section#formules-photos{
-
+  
+  margin-top: 30px;
  .formules-container{
   @media screen and (min-width:1200px) {
-    
     max-width: 992px;
   }
   #carousel-formules-photos{

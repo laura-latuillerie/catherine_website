@@ -617,6 +617,10 @@ section#videos-portfolio .categorie-video a:hover {
 section#formules-videos .formules-container #carousel-formules-videos {
   margin: 0 20px 30px;
 }
+section#formules-videos .formules-container #carousel-formules-videos .btn-pink:hover {
+  color: #000000;
+  border: 1px solid #000000;
+}
 section#formules-videos .formules-container #carousel-formules-videos .slick-prev {
   z-index: 9;
 }
@@ -684,6 +688,9 @@ section#formules-videos .formules-container #carousel-formules-videos .formule .
   padding-inline-start: 30px;
   display: inline-block;
   height: 292px;
+}
+section#formules-photos {
+  margin-top: 30px;
 }
 @media screen and (min-width: 1200px) {
   section#formules-photos .formules-container {
@@ -1255,7 +1262,7 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
 }
 @media screen and (min-width: 768px) {
   #twitch {
-    padding: 50px 0 100px;
+    padding: 0 0 100px;
   }
 }
 #twitch .text-justify {
@@ -1303,13 +1310,19 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   padding: 20px 0 0;
 }
 #twitch #twitch-container p {
-  max-width: 768px;
   margin: 0 auto;
   font-size: 16px;
   padding: 10px;
 }
+#twitch #twitch-container p.intro {
+  max-width: 768px;
+}
+#twitch #twitch-container p.px-3-responsive {
+  max-width: 560px;
+  margin: 0 auto;
+}
 @media screen and (max-width: 576px) {
-  #twitch #twitch-container p.px-3.responsive {
+  #twitch #twitch-container p.px-3-responsive {
     padding: 0;
     font-size: 14px;
     line-height: 16px;
@@ -1330,11 +1343,11 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
     width: 50px;
   }
 }
-#tomodachis,
 #past-events {
-  padding: 50px 0;
+  padding: 50px 0 0;
 }
 #tomodachis {
+  padding: 50px 0;
   cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABFklEQVRYR9WXURLDIAhE6/0PbSdOtUpcd1Gnpv1KGpTHBpCE1/cXq+vrMph7dGvXZTtpfW10DCA5jrH1H0Jhs5E0hnZdCR+vb5S8Nn8mQCeS9BdSalYJqMBjAGzq59xAESN7VFVUgV8AZB/dZBR7QTFDCqGquvUBVVoEtgIwpQRzmANSFHgWQKExHdIrPeuMvQNDarXe6nC/AutgV3JW+6bgqQLeV8FekRtgV+ToDKEKnACYKsfZjjkam7a0ZpYTytwmgainpC3HvwBocgKOxqRjehoR9DFKNFYtOwCGYCszobeCbl26N6yyQ6g8X/Wex/rBPsNEV6qAMaJPMynIHQCoSqS9JSMmwef51LflTgCRszU7DvAGiV6mHWfsaVUAAAAASUVORK5CYII=), auto;
   background-color: #222222;
 }
