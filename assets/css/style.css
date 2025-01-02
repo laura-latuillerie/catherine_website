@@ -1255,7 +1255,7 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
 }
 @media screen and (min-width: 768px) {
   #twitch {
-    padding: 50px 0;
+    padding: 50px 0 100px;
   }
 }
 #twitch .text-justify {
@@ -1332,11 +1332,11 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
 }
 #tomodachis,
 #past-events {
-  background-color: #222222;
   padding: 50px 0;
 }
 #tomodachis {
   cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABFklEQVRYR9WXURLDIAhE6/0PbSdOtUpcd1Gnpv1KGpTHBpCE1/cXq+vrMph7dGvXZTtpfW10DCA5jrH1H0Jhs5E0hnZdCR+vb5S8Nn8mQCeS9BdSalYJqMBjAGzq59xAESN7VFVUgV8AZB/dZBR7QTFDCqGquvUBVVoEtgIwpQRzmANSFHgWQKExHdIrPeuMvQNDarXe6nC/AutgV3JW+6bgqQLeV8FekRtgV+ToDKEKnACYKsfZjjkam7a0ZpYTytwmgainpC3HvwBocgKOxqRjehoR9DFKNFYtOwCGYCszobeCbl26N6yyQ6g8X/Wex/rBPsNEV6qAMaJPMynIHQCoSqS9JSMmwef51LflTgCRszU7DvAGiV6mHWfsaVUAAAAASUVORK5CYII=), auto;
+  background-color: #222222;
 }
 #tomodachis #characters-selection-container {
   justify-content: center;
@@ -2124,7 +2124,7 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   font-weight: bold;
 }
 .modal-dialog.modal-showreel {
-  max-width: 800px;
+  max-width: 796px;
   margin: 30px auto;
 }
 .modal-dialog.modal-showreel .modal-content {
@@ -2155,22 +2155,22 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   color: #fff;
   opacity: 1;
 }
-#playlist .modal-dialog {
+#playlist-clips .modal-dialog {
   max-width: 800px;
   margin: 30px auto;
 }
-#playlist .modal-dialog .modal-content {
+#playlist-clips .modal-dialog .modal-content {
   background-color: #fac0e6;
   border: 2px solid #fac0e6;
 }
-#playlist .modal-dialog .modal-content .container {
+#playlist-clips .modal-dialog .modal-content .container {
   padding: 0 5px 0;
 }
-#playlist .modal-dialog .modal-content .container img {
+#playlist-clips .modal-dialog .modal-content .container img {
   max-width: 100%;
   height: auto;
 }
-#playlist .modal-dialog .modal-content .container .embed-container {
+#playlist-clips .modal-dialog .modal-content .container .embed-container {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
@@ -2178,22 +2178,22 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   max-width: 100%;
   height: auto;
 }
-#playlist .modal-dialog .modal-content .container .embed-container iframe,
-#playlist .modal-dialog .modal-content .container .embed-container object,
-#playlist .modal-dialog .modal-content .container .embed-container embed {
+#playlist-clips .modal-dialog .modal-content .container .embed-container iframe,
+#playlist-clips .modal-dialog .modal-content .container .embed-container object,
+#playlist-clips .modal-dialog .modal-content .container .embed-container embed {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-#playlist .modal-dialog .modal-content .container .video-player__playing {
+#playlist-clips .modal-dialog .modal-content .container .video-player__playing {
   margin-bottom: 8px;
 }
-#playlist .modal-dialog .modal-content .container .video-player__thumbs {
+#playlist-clips .modal-dialog .modal-content .container .video-player__thumbs {
   overflow: hidden;
 }
-#playlist .modal-dialog .modal-content .container .video-thumb {
+#playlist-clips .modal-dialog .modal-content .container .video-thumb {
   float: left;
   width: 48%;
   position: relative;
@@ -2203,37 +2203,37 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
-  #playlist .modal-dialog .modal-content .container .video-thumb {
+  #playlist-clips .modal-dialog .modal-content .container .video-thumb {
     width: 23.5%;
     padding-bottom: 13%;
   }
 }
-#playlist .modal-dialog .modal-content .container .video-thumb:nth-last-child(even) {
+#playlist-clips .modal-dialog .modal-content .container .video-thumb:nth-last-child(even) {
   margin-right: 3.2%;
   margin-bottom: 2%;
 }
 @media screen and (min-width: 768px) {
-  #playlist .modal-dialog .modal-content .container .video-thumb:nth-last-child(even) {
+  #playlist-clips .modal-dialog .modal-content .container .video-thumb:nth-last-child(even) {
     margin-right: unset;
     margin-bottom: unset;
   }
 }
 @media screen and (min-width: 768px) {
-  #playlist .modal-dialog .modal-content .container .video-thumb:not(:last-child) {
+  #playlist-clips .modal-dialog .modal-content .container .video-thumb:not(:last-child) {
     margin-right: 2%;
   }
 }
-#playlist .modal-dialog .modal-content .video-thumb.active {
+#playlist-clips .modal-dialog .modal-content .video-thumb.active {
   cursor: default;
 }
-#playlist .modal-dialog .modal-content .video-thumb:before,
-#playlist .modal-dialog .modal-content .video-thumb:after {
+#playlist-clips .modal-dialog .modal-content .video-thumb:before,
+#playlist-clips .modal-dialog .modal-content .video-thumb:after {
   display: block;
   position: absolute;
   transition: all 250ms ease-out;
   z-index: 1;
 }
-#playlist .modal-dialog .modal-content .video-thumb:before {
+#playlist-clips .modal-dialog .modal-content .video-thumb:before {
   content: "";
   top: 0;
   left: 0;
@@ -2241,13 +2241,13 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   height: 100%;
   background: rgba(247, 148, 30, 0);
 }
-#playlist .modal-dialog .modal-content .video-thumb.active:before {
+#playlist-clips .modal-dialog .modal-content .video-thumb.active:before {
   background: #000000;
 }
-#playlist .modal-dialog .modal-content .video-thumb:not(.active):hover:before {
+#playlist-clips .modal-dialog .modal-content .video-thumb:not(.active):hover:before {
   background: rgba(0, 0, 0, 0.5);
 }
-#playlist .modal-dialog .modal-content .video-thumb:after {
+#playlist-clips .modal-dialog .modal-content .video-thumb:after {
   content: "\f144";
   font-family: "FontAwesome";
   top: 50%;
@@ -2258,19 +2258,19 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   line-height: 1;
 }
 @media screen and (min-width: 768px) {
-  #playlist .modal-dialog .modal-content .video-thumb:after {
+  #playlist-clips .modal-dialog .modal-content .video-thumb:after {
     font-size: 2em;
   }
 }
 @media screen and (min-width: 992px) {
-  #playlist .modal-dialog .modal-content .video-thumb:after {
+  #playlist-clips .modal-dialog .modal-content .video-thumb:after {
     font-size: 2.6em;
   }
 }
-#playlist .modal-dialog .modal-content .video-thumb.active:after {
+#playlist-clips .modal-dialog .modal-content .video-thumb.active:after {
   color: #ffffff;
 }
-#playlist .modal-dialog .modal-content .video-thumb img {
+#playlist-clips .modal-dialog .modal-content .video-thumb img {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
