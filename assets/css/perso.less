@@ -422,6 +422,7 @@
   .nav-pills{
     display: flex;
     justify-content: center;
+    padding: 0 20px;
     .nav-item{
       background: @pink;
       color: @black;
@@ -444,6 +445,20 @@
 
       @media screen and (min-width:410px) {
         margin: 0 20px;
+      }
+    }
+    .nav-item:nth-child(3){
+      margin-right: 20px;
+      margin-top: 10px;
+      @media screen and (min-width:739px) {
+        margin-top: unset;
+      }
+    }
+    .nav-item:nth-child(4){
+      transform: rotate(-2deg);
+      margin-top: 10px;
+      @media screen and (min-width:930px) {
+        margin-top: 0;
       }
     }
   }
@@ -854,7 +869,7 @@
           }
         } 
       }
-      #lost{
+      #eyez{
         img.affiche{
           width: 300px;
           max-width: 300px;
@@ -926,35 +941,35 @@
   
         .div1 {
           grid-row: span 3 / span 3;
-          background-image: url(../images/lost/Anger.jpg);
+          background-image: url(../images/eyez/Anger.jpg);
 
         }
 
         .div2 {
           grid-row: span 3 / span 3;
-          background-image: url(../images/lost/Sadness.jpg);
+          background-image: url(../images/eyez/Sadness.jpg);
         }
 
         .div3 {
           grid-row: span 3 / span 3;
           grid-row-start: 4;
-          background-image: url(../images/lost/Love.jpg);
+          background-image: url(../images/eyez/Hustle.jpg);
         }
 
         .div4 {
           grid-row: span 3 / span 3;
           grid-row-start: 4;
-          background-image: url(../images/lost/Lust.jpg);
+          background-image: url(../images/eyez/Lust.jpg);
         }
       }
     
         .grid {
           display: none;
-          grid-template-columns: repeat(4, 1fr);
-          grid-template-rows: repeat(4, 1fr);
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(1, 1fr);
           gap: 8px;
-          margin: 20px auto;
-          height: 500px;
+          margin: 0 auto 20px;
+          height: 300px;
 
           @media screen and (min-width:992px) {
             display: grid;
@@ -967,47 +982,132 @@
           }
           .div1 {
             grid-row: span 2 / span 2;
-            background-image: url(../images/lost/Anger.jpg);
+            background-image: url(../images/eyez/Anger.jpg);
         }
 
         .div2 {
             grid-row: span 2 / span 2;
-            background-image: url(../images/lost/eyez-chico.png);
+            background-image: url(../images/eyez/Lust.jpg);
         }
 
         .div3 {
             grid-row: span 2 / span 2;
-            background-image: url(../images/lost/Hustle.jpg);
+            background-image: url(../images/eyez/Sadness.jpg);
         }
 
         .div4 {
             grid-row: span 2 / span 2;
-            background-image: url(../images/lost/Sadness.jpg);
+            background-image: url(../images/eyez/Hustle.jpg);
+        }
+        }
+      }
+      #lost{
+        img.affiche{
+          width: 300px;
+          max-width: 300px;
+          height: auto;
+          margin: 0 auto;
+          @media screen and (min-width:992px){
+            width: 95%;
+            max-width: 95%;
+            height: auto;
+          }
+        }
+        .left-responsive{
+         text-align: center;
+         margin: 0 auto 40px;
+         max-width: 768px;
+        }
+        .right-responsive{
+         text-align: center;
+         margin: 0 auto;
+         @media screen and (min-width:992px) {
+          text-align: right;
+         }
+        }
+        h3{
+         text-transform: uppercase;
+         font-weight: bold;
+         margin-top: 20px;
+         .lemon;
+         .pink;
+        }
+        h4{
+          font-weight: bold;
+        }
+        p{
+         font-size: 16px;
+         &.credits{
+          font-style: italic;
+         }
+        }
+        .row{
+         justify-content: space-between;
+        }
+        .ratio.ratio-16x9{
+          max-width: 768px;
+          margin: 0 auto;
         }
 
-        .div5 {
-            grid-row: span 2 / span 2;
-            grid-row-start: 3;
-            background-image: url(../images/lost/IMG_0030.jpg);
+      .grid-mobile {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 8px;
+        margin: 20px auto;
+        height: 300px;
+
+        @media screen and (min-width:992px) {
+          display: none;
         }
 
-        .div6 {
-            grid-row: span 2 / span 2;
-            grid-row-start: 3;
-            background-image: url(../images/lost/Love.jpg);
+        &>div{
+          background-size: cover;
+          background-position: center;
+          border-radius: 10px;
         }
+  
+        .div1 {
+          grid-row: span 3 / span 3;
+          background-image: url(../images/lost/IMG_0012.jpg);
+      }
+      .div2 {
+        grid-row: span 3 / span 3;
+        background-image: url(../images/lost/affiche_lost.jpg);
+    }
 
-        .div7 {
+      }
+    
+        .grid {
+          display: none;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(1, 1fr);
+          gap: 8px;
+          margin: 20px auto;
+          height: 400px;
+
+          @media screen and (min-width:992px) {
+            display: grid;
+          }
+
+          &>div{
+            background-size: cover;
+            background-position: 50% 25%;
+            border-radius: 10px;
+          }
+          .div1 {
             grid-row: span 2 / span 2;
-            grid-row-start: 3;
             background-image: url(../images/lost/IMG_0012.jpg);
         }
 
-        .div8 {
+        .div2 {
             grid-row: span 2 / span 2;
-            grid-row-start: 3;
-            background-image: url(../images/lost/Lust.jpg);
+            background-image: url(../images/lost/IMG_0030.jpg);
         }
+        .div3 {
+          grid-row: span 2 / span 2;
+          background-image: url(../images/lost/affiche_lost.jpg);
+      }
         }
       }
     }

@@ -1524,6 +1524,7 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
 #past-events .nav-pills {
   display: flex;
   justify-content: center;
+  padding: 0 20px;
 }
 #past-events .nav-pills .nav-item {
   background: #fac0e6;
@@ -1549,6 +1550,24 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
 @media screen and (min-width: 410px) {
   #past-events .nav-pills .nav-item:nth-child(2) {
     margin: 0 20px;
+  }
+}
+#past-events .nav-pills .nav-item:nth-child(3) {
+  margin-right: 20px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 739px) {
+  #past-events .nav-pills .nav-item:nth-child(3) {
+    margin-top: unset;
+  }
+}
+#past-events .nav-pills .nav-item:nth-child(4) {
+  transform: rotate(-2deg);
+  margin-top: 10px;
+}
+@media screen and (min-width: 930px) {
+  #past-events .nav-pills .nav-item:nth-child(4) {
+    margin-top: 0;
   }
 }
 #past-events .projet {
@@ -1937,6 +1956,134 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   grid-row-start: 4;
   background-image: url(../images/prochaine-fois/capture06.png);
 }
+#past-events .projet #eyez img.affiche {
+  width: 300px;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
+  #past-events .projet #eyez img.affiche {
+    width: 95%;
+    max-width: 95%;
+    height: auto;
+  }
+}
+#past-events .projet #eyez .left-responsive {
+  text-align: center;
+  margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
+  #past-events .projet #eyez .left-responsive {
+    text-align: left;
+  }
+}
+#past-events .projet #eyez .right-responsive {
+  text-align: center;
+  margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
+  #past-events .projet #eyez .right-responsive {
+    text-align: right;
+  }
+}
+#past-events .projet #eyez h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
+  font-family: 'Lemon', sans-serif;
+  color: #fac0e6;
+}
+#past-events .projet #eyez h4 {
+  font-weight: bold;
+}
+#past-events .projet #eyez p {
+  font-size: 16px;
+}
+#past-events .projet #eyez p.credits {
+  font-style: italic;
+}
+#past-events .projet #eyez .row {
+  justify-content: space-between;
+}
+#past-events .projet #eyez .ratio.ratio-16x9 {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  #past-events .projet #eyez .ratio.ratio-16x9 {
+    display: block;
+  }
+}
+#past-events .projet #eyez .grid-mobile {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 8px;
+  margin: 20px auto;
+  height: 500px;
+}
+@media screen and (min-width: 992px) {
+  #past-events .projet #eyez .grid-mobile {
+    display: none;
+  }
+}
+#past-events .projet #eyez .grid-mobile > div {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+#past-events .projet #eyez .grid-mobile .div1 {
+  grid-row: span 3 / span 3;
+  background-image: url(../images/eyez/Anger.jpg);
+}
+#past-events .projet #eyez .grid-mobile .div2 {
+  grid-row: span 3 / span 3;
+  background-image: url(../images/eyez/Sadness.jpg);
+}
+#past-events .projet #eyez .grid-mobile .div3 {
+  grid-row: span 3 / span 3;
+  grid-row-start: 4;
+  background-image: url(../images/eyez/Hustle.jpg);
+}
+#past-events .projet #eyez .grid-mobile .div4 {
+  grid-row: span 3 / span 3;
+  grid-row-start: 4;
+  background-image: url(../images/eyez/Lust.jpg);
+}
+#past-events .projet #eyez .grid {
+  display: none;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 8px;
+  margin: 0 auto 20px;
+  height: 300px;
+}
+@media screen and (min-width: 992px) {
+  #past-events .projet #eyez .grid {
+    display: grid;
+  }
+}
+#past-events .projet #eyez .grid > div {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+#past-events .projet #eyez .grid .div1 {
+  grid-row: span 2 / span 2;
+  background-image: url(../images/eyez/Anger.jpg);
+}
+#past-events .projet #eyez .grid .div2 {
+  grid-row: span 2 / span 2;
+  background-image: url(../images/eyez/Lust.jpg);
+}
+#past-events .projet #eyez .grid .div3 {
+  grid-row: span 2 / span 2;
+  background-image: url(../images/eyez/Sadness.jpg);
+}
+#past-events .projet #eyez .grid .div4 {
+  grid-row: span 2 / span 2;
+  background-image: url(../images/eyez/Hustle.jpg);
+}
 #past-events .projet #lost img.affiche {
   width: 300px;
   max-width: 300px;
@@ -1952,12 +2099,8 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
 }
 #past-events .projet #lost .left-responsive {
   text-align: center;
-  margin: 0 auto;
-}
-@media screen and (min-width: 992px) {
-  #past-events .projet #lost .left-responsive {
-    text-align: left;
-  }
+  margin: 0 auto 40px;
+  max-width: 768px;
 }
 #past-events .projet #lost .right-responsive {
   text-align: center;
@@ -1988,20 +2131,16 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   justify-content: space-between;
 }
 #past-events .projet #lost .ratio.ratio-16x9 {
-  display: none;
-}
-@media screen and (min-width: 992px) {
-  #past-events .projet #lost .ratio.ratio-16x9 {
-    display: block;
-  }
+  max-width: 768px;
+  margin: 0 auto;
 }
 #past-events .projet #lost .grid-mobile {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   gap: 8px;
   margin: 20px auto;
-  height: 500px;
+  height: 300px;
 }
 @media screen and (min-width: 992px) {
   #past-events .projet #lost .grid-mobile {
@@ -2015,29 +2154,19 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
 }
 #past-events .projet #lost .grid-mobile .div1 {
   grid-row: span 3 / span 3;
-  background-image: url(../images/lost/Anger.jpg);
+  background-image: url(../images/lost/IMG_0012.jpg);
 }
 #past-events .projet #lost .grid-mobile .div2 {
   grid-row: span 3 / span 3;
-  background-image: url(../images/lost/Sadness.jpg);
-}
-#past-events .projet #lost .grid-mobile .div3 {
-  grid-row: span 3 / span 3;
-  grid-row-start: 4;
-  background-image: url(../images/lost/Love.jpg);
-}
-#past-events .projet #lost .grid-mobile .div4 {
-  grid-row: span 3 / span 3;
-  grid-row-start: 4;
-  background-image: url(../images/lost/Lust.jpg);
+  background-image: url(../images/lost/affiche_lost.jpg);
 }
 #past-events .projet #lost .grid {
   display: none;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   gap: 8px;
   margin: 20px auto;
-  height: 500px;
+  height: 400px;
 }
 @media screen and (min-width: 992px) {
   #past-events .projet #lost .grid {
@@ -2046,44 +2175,20 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
 }
 #past-events .projet #lost .grid > div {
   background-size: cover;
-  background-position: center;
+  background-position: 50% 25%;
   border-radius: 10px;
 }
 #past-events .projet #lost .grid .div1 {
   grid-row: span 2 / span 2;
-  background-image: url(../images/lost/Anger.jpg);
+  background-image: url(../images/lost/IMG_0012.jpg);
 }
 #past-events .projet #lost .grid .div2 {
   grid-row: span 2 / span 2;
-  background-image: url(../images/lost/eyez-chico.png);
+  background-image: url(../images/lost/IMG_0030.jpg);
 }
 #past-events .projet #lost .grid .div3 {
   grid-row: span 2 / span 2;
-  background-image: url(../images/lost/Hustle.jpg);
-}
-#past-events .projet #lost .grid .div4 {
-  grid-row: span 2 / span 2;
-  background-image: url(../images/lost/Sadness.jpg);
-}
-#past-events .projet #lost .grid .div5 {
-  grid-row: span 2 / span 2;
-  grid-row-start: 3;
-  background-image: url(../images/lost/IMG_0030.jpg);
-}
-#past-events .projet #lost .grid .div6 {
-  grid-row: span 2 / span 2;
-  grid-row-start: 3;
-  background-image: url(../images/lost/Love.jpg);
-}
-#past-events .projet #lost .grid .div7 {
-  grid-row: span 2 / span 2;
-  grid-row-start: 3;
-  background-image: url(../images/lost/IMG_0012.jpg);
-}
-#past-events .projet #lost .grid .div8 {
-  grid-row: span 2 / span 2;
-  grid-row-start: 3;
-  background-image: url(../images/lost/Lust.jpg);
+  background-image: url(../images/lost/affiche_lost.jpg);
 }
 #past-events .btn-container {
   padding: 30px 0;
