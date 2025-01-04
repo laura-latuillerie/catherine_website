@@ -141,7 +141,6 @@ body {
   color: #ffffff;
   overflow-x: hidden;
   font-family: 'urbanist';
-  position: relative;
 }
 body h2 {
   font-family: 'Lemon', sans-serif;
@@ -473,6 +472,7 @@ footer.active .credits {
 }
 #choice-bg {
   width: 100vh;
+  height: 100vh;
   max-height: -webkit-fill-available;
   position: fixed;
   z-index: -1;
@@ -480,6 +480,7 @@ footer.active .credits {
 #choice-content {
   text-align: center;
   height: 100vh;
+  max-height: -webkit-fill-available;
   display: flex;
   align-items: center;
   justify-content: center;
