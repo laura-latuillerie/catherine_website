@@ -1842,11 +1842,11 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
 #past-events .projet #kurt .row {
   justify-content: space-between;
 }
-#past-events .projet #kurt .ratio.ratio-16x9 {
+#past-events .projet #kurt .ratio {
   display: none;
 }
 @media screen and (min-width: 992px) {
-  #past-events .projet #kurt .ratio.ratio-16x9 {
+  #past-events .projet #kurt .ratio {
     display: block;
   }
 }
