@@ -255,10 +255,6 @@ header nav.navbar {
 header nav.navbar .navbar-brand img {
   width: 70px;
 }
-header nav.navbar .navbar-brand img.blue {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1) rotate(-10deg);
-}
 header nav.navbar .navbar-toggler {
   background: rgba(0, 0, 0, 0.6);
 }
@@ -476,7 +472,7 @@ footer.active .credits {
 }
 #choice-bg {
   width: 100vh;
-  height: 100vh;
+  max-height: -webkit-fill-available;
   position: fixed;
   z-index: -1;
 }
