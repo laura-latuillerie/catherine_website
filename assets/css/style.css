@@ -1657,14 +1657,6 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
 #past-events .projet #prochaine-fois .row {
   justify-content: space-between;
 }
-#past-events .projet #prochaine-fois .ratio.ratio-16x9 {
-  display: none;
-}
-@media screen and (min-width: 992px) {
-  #past-events .projet #prochaine-fois .ratio.ratio-16x9 {
-    display: block;
-  }
-}
 #past-events .projet #prochaine-fois .grid-mobile {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -1841,14 +1833,6 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
 }
 #past-events .projet #kurt .row {
   justify-content: space-between;
-}
-#past-events .projet #kurt .ratio {
-  display: none;
-}
-@media screen and (min-width: 992px) {
-  #past-events .projet #kurt .ratio {
-    display: block;
-  }
 }
 #past-events .projet #kurt .grid-mobile {
   display: grid;
