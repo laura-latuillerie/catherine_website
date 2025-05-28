@@ -1259,12 +1259,14 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   width: 40px;
 }
 #video-club {
-  padding-bottom: 50px;
+  padding: 50px 0;
+  background: #222222;
 }
 #video-club #video-club-container {
   text-align: center;
 }
 #video-club #video-club-container #video-club-logo {
+  width: 100%;
   max-width: 500px;
   height: auto;
 }
@@ -1529,7 +1531,7 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   }
 }
 #past-events .projet #prochaine-fois img.affiche {
-  width: 300px;
+  width: 100%;
   max-width: 300px;
   height: auto;
   margin: 0 auto;
@@ -1883,7 +1885,7 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   background-image: url(../images/prochaine-fois/capture06.png);
 }
 #past-events .projet #eyez img.affiche {
-  width: 300px;
+  width: 100%;
   max-width: 300px;
   height: auto;
   margin: 0 auto;
