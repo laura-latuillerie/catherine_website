@@ -535,11 +535,11 @@ footer.active .credits {
 #wrapper-hidden {
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 @media screen and (min-width: 450px) {
   #wrapper-hidden {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media screen and (min-width: 576px) {
@@ -1257,6 +1257,16 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
 #tele-perso .video-container #player-btns img {
   height: 40px;
   width: 40px;
+}
+#video-club {
+  padding-bottom: 50px;
+}
+#video-club #video-club-container {
+  text-align: center;
+}
+#video-club #video-club-container #video-club-logo {
+  max-width: 500px;
+  height: auto;
 }
 #past-events {
   padding: 50px 0 0;
