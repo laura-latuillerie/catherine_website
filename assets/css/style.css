@@ -1266,12 +1266,11 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   text-align: center;
 }
 #video-club #video-club-container #video-club-logo {
+  margin-top: 40px;
   width: 100%;
   max-width: 500px;
   height: auto;
-}
-#past-events {
-  padding: 50px 0 0;
+  transform: rotate(-10deg);
 }
 #tomodachis {
   padding: 50px 0;
@@ -1465,6 +1464,9 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
 #tomodachis .tab-pane .character-desc .infos-progress .progress-flex progress[value]::-webkit-progress-value {
   background-color: #ffffff;
 }
+#past-events {
+  padding: 50px 0 0;
+}
 #past-events .nav-pills {
   display: flex;
   justify-content: center;
@@ -1474,6 +1476,7 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   background: #fac0e6;
   color: #000000;
   transform: rotate(2deg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 #past-events .nav-pills .nav-item .nav-link {
   background: #fac0e6;
@@ -1487,30 +1490,28 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
 #past-events .nav-pills .nav-item .nav-link:hover {
   filter: brightness(1);
 }
-#past-events .nav-pills .nav-item:nth-child(2) {
-  margin: 10px 20px;
-  transform: rotate(-2deg);
-}
-@media screen and (min-width: 410px) {
-  #past-events .nav-pills .nav-item:nth-child(2) {
-    margin: 0 20px;
-  }
-}
-#past-events .nav-pills .nav-item:nth-child(3) {
+#past-events .nav-pills .nav-item:nth-child(1) {
   margin-right: 20px;
-  margin-top: 10px;
+  transform: rotate(-4deg);
 }
 @media screen and (min-width: 739px) {
-  #past-events .nav-pills .nav-item:nth-child(3) {
+  #past-events .nav-pills .nav-item:nth-child(1) {
     margin-top: unset;
   }
 }
-#past-events .nav-pills .nav-item:nth-child(4) {
+#past-events .nav-pills .nav-item:nth-child(3) {
+  margin: 0 20px;
   transform: rotate(-2deg);
-  margin-top: 10px;
+}
+#past-events .nav-pills .nav-item:nth-child(4) {
+  margin-right: 20px;
+  transform: rotate(7deg);
+}
+#past-events .nav-pills .nav-item:nth-child(5) {
+  transform: rotate(-2deg);
 }
 @media screen and (min-width: 930px) {
-  #past-events .nav-pills .nav-item:nth-child(4) {
+  #past-events .nav-pills .nav-item:nth-child(5) {
     margin-top: 0;
   }
 }
@@ -1529,6 +1530,131 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   #past-events .projet {
     padding: 50px;
   }
+}
+#past-events .projet #bodytalks img.affiche {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
+  #past-events .projet #bodytalks img.affiche {
+    width: 95%;
+    max-width: 95%;
+    height: auto;
+  }
+}
+#past-events .projet #bodytalks .left-responsive {
+  text-align: center;
+  margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
+  #past-events .projet #bodytalks .left-responsive {
+    text-align: left;
+  }
+}
+#past-events .projet #bodytalks .right-responsive {
+  text-align: center;
+  margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
+  #past-events .projet #bodytalks .right-responsive {
+    text-align: right;
+  }
+}
+#past-events .projet #bodytalks h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
+  font-family: 'Lemon', sans-serif;
+  color: #fac0e6;
+}
+#past-events .projet #bodytalks h4 {
+  font-weight: bold;
+}
+#past-events .projet #bodytalks p {
+  font-size: 16px;
+}
+#past-events .projet #bodytalks p.credits {
+  font-style: italic;
+}
+#past-events .projet #bodytalks .row {
+  justify-content: space-between;
+}
+#past-events .projet #bodytalks .grid-mobile {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 8px;
+  margin: 20px auto;
+  max-height: 600px;
+}
+@media screen and (min-width: 992px) {
+  #past-events .projet #bodytalks .grid-mobile {
+    display: none;
+  }
+}
+#past-events .projet #bodytalks .grid-mobile > div {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  height: 300px;
+}
+#past-events .projet #bodytalks .grid-mobile .div1 {
+  grid-area: 0.125;
+  background-image: url(../images/bodytalks/Team00010.png);
+}
+#past-events .projet #bodytalks .grid-mobile .div2 {
+  grid-area: 0.04166667;
+  background-image: url(../images/bodytalks/TillanaDanse00007.png);
+}
+#past-events .projet #bodytalks .grid-mobile .div3 {
+  grid-area: 0.28571429;
+  background-image: url(../images/bodytalks/HacenPortrait00012.png);
+}
+#past-events .projet #bodytalks .grid-mobile .div4 {
+  grid-area: 0.0952381;
+  background-image: url(../images/bodytalks/DanseLouis00006.png);
+}
+#past-events .projet #bodytalks .grid-desktop {
+  display: none;
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px;
+  margin: 20px auto;
+  max-height: 400px;
+}
+@media screen and (min-width: 992px) {
+  #past-events .projet #bodytalks .grid-desktop {
+    display: grid;
+  }
+}
+#past-events .projet #bodytalks .grid-desktop > div {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  height: 400px;
+}
+#past-events .projet #bodytalks .grid-desktop .div1 {
+  grid-area: 0.125;
+  background-image: url(../images/bodytalks/Team00010.png);
+}
+#past-events .projet #bodytalks .grid-desktop .div2 {
+  grid-area: 0.04166667;
+  background-image: url(../images/bodytalks/TillanaDanse00007.png);
+}
+#past-events .projet #bodytalks .grid-desktop .div3 {
+  grid-area: 0.02083333;
+  background-image: url(../images/bodytalks/HacenPortrait00012.png);
+}
+#past-events .projet #bodytalks .grid-desktop .div4 {
+  grid-area: 0.0125;
+  background-image: url(../images/bodytalks/DanseLouis00006.png);
+}
+#past-events .projet #bodytalks .grid-desktop .div5 {
+  grid-area: 0.00833333;
+  background-image: url(../images/bodytalks/SoHacenDanse00010.png);
 }
 #past-events .projet #prochaine-fois img.affiche {
   width: 100%;
