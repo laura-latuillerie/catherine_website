@@ -1103,8 +1103,8 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
 }
 .citation #slot1 {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -50px;
+  right: 20px;
   z-index: 10;
 }
 @media screen and (min-width: 992px) {
@@ -1115,8 +1115,8 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
 }
 .citation #slot2 {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -30px;
+  left: 20px;
   z-index: 10;
 }
 @media screen and (min-width: 992px) {
