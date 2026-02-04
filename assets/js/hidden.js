@@ -1,49 +1,45 @@
-// Tableau des chemins d'accès aux images
+// Images dans l'ordre voulu
 const images = [
- 'assets/images/kirby-sticker.png',
- 'assets/images/krang-sticker.png',
- 'assets/images/jiggly-sticker.png'
+  'assets/images/kirby-sticker.png',
+  'assets/images/krang-sticker.png',
+  'assets/images/jiggly-sticker.png'
 ];
 
-// Sélectionner les deux emplacements d'images
 const slot1 = document.getElementById('slot1');
 const slot2 = document.getElementById('slot2');
 
-// Variable pour alterner entre les emplacements
+let index = 0;
 let showInFirstSlot = true;
 
-function afficherImageAleatoire() {
- // Choisir une image aléatoirement
- const randomImage = images[Math.floor(Math.random() * images.length)];
+function afficherImage() {
+  const img = document.createElement('img');
+  img.src = images[index];
 
- // Créer un élément <img> pour l'image
- const imgElement = document.createElement('img');
- imgElement.src = randomImage;
+  const currentSlot = showInFirstSlot ? slot1 : slot2;
+  const otherSlot = showInFirstSlot ? slot2 : slot1;
 
- // Définir l'emplacement où afficher l'image (alternance)
- const currentSlot = showInFirstSlot ? slot1 : slot2;
- const otherSlot = showInFirstSlot ? slot2 : slot1;
+  // Nettoyage
+  currentSlot.innerHTML = '';
+  otherSlot.innerHTML = '';
 
+  // Affichage
+  currentSlot.appendChild(img);
+  currentSlot.style.display = 'block';
+  otherSlot.style.display = 'none';
 
- // Nettoyer les emplacements et afficher l'image
- currentSlot.innerHTML = '';
- currentSlot.appendChild(imgElement);
+  // Masquer après 2 secondes
+  setTimeout(() => {
+    currentSlot.style.display = 'none';
+    currentSlot.innerHTML = '';
+  }, 2000);
 
-     // Alterner l'affichage entre les deux emplacements
-    currentSlot.style.display = 'block';
-    otherSlot.style.display = 'none';
-
- // Alterner pour l'emplacement suivant
- showInFirstSlot = !showInFirstSlot;
-
- // Supprimer l'image après 10 secondes
- setTimeout(() => {
-     currentSlot.innerHTML = showInFirstSlot ? '' : '';
- }, 5000);
+  // Image suivante (boucle)
+  index = (index + 1) % images.length;
+  showInFirstSlot = !showInFirstSlot;
 }
 
-// Répéter la fonction toutes les 10 secondes
-setInterval(afficherImageAleatoire, 10000);
+// Lancer immédiatement
+afficherImage();
 
-// Lancer la première exécution immédiatement
-afficherImageAleatoire();
+// Nouvelle image toutes les 5 secondes
+setInterval(afficherImage, 5000);

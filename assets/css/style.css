@@ -40,6 +40,12 @@
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Biro';
+  src: url('../fonts/biro/biro-script-plus.woff2') format('woff2'), url('../fonts/biro/biro-script-plus.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 .satoshi {
   font-family: "Lemon", sans-serif;
 }
@@ -53,7 +59,7 @@
   font-family: 'Lemon', sans-serif;
 }
 .pink {
-  color: #fac0e6;
+  color: #ef8bc9;
 }
 .white {
   color: #ffffff;
@@ -87,7 +93,7 @@
 }
 .btn-pink {
   font-family: 'Urbanist', sans-serif;
-  background-color: #fac0e6;
+  background-color: #ef8bc9;
   border-radius: 30px;
   text-transform: uppercase;
   font-size: 14px;
@@ -99,7 +105,7 @@
 }
 .btn-pink.second {
   font-family: 'Urbanist', sans-serif;
-  background-color: #fac0e6;
+  background-color: #ef8bc9;
   border-radius: 30px;
   text-transform: uppercase;
   font-size: 14px;
@@ -273,7 +279,7 @@ header nav.navbar #navbarScroll .nav-link {
   font-weight: 600;
 }
 header nav.navbar .offcanvas {
-  background-color: #fac0e6;
+  background-color: #ef8bc9;
   color: #000000;
   width: 100vw;
 }
@@ -407,7 +413,7 @@ header nav.navbar .offcanvas .navbar-nav-offcanvas .nav-link {
   }
 }
 footer.active {
-  background: #fac0e6;
+  background: #ef8bc9;
   padding: 20px 0 50px;
   text-align: center;
   color: #000000;
@@ -645,7 +651,7 @@ section#formules-videos .formules-container #carousel-formules-videos .formule {
 section#formules-videos .formules-container #carousel-formules-videos .formule .formule-header {
   border-radius: 10px 10px 0 0;
   padding: 15px 0;
-  background: #fac0e6;
+  background: #ef8bc9;
 }
 section#formules-videos .formules-container #carousel-formules-videos .formule .formule-header h4,
 section#formules-videos .formules-container #carousel-formules-videos .formule .formule-header h6,
@@ -724,7 +730,7 @@ section#formules-photos .formules-container #carousel-formules-photos .formule {
 section#formules-photos .formules-container #carousel-formules-photos .formule .formule-header {
   border-radius: 10px 10px 0 0;
   padding: 15px 0;
-  background: #fac0e6;
+  background: #ef8bc9;
 }
 section#formules-photos .formules-container #carousel-formules-photos .formule .formule-header h4,
 section#formules-photos .formules-container #carousel-formules-photos .formule .formule-header h6,
@@ -1040,12 +1046,12 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
 }
 .citation {
   text-align: center;
-  padding: 30px 0;
+  padding: 50px 0;
   position: relative;
 }
 @media screen and (min-width: 992px) {
   .citation {
-    padding: 40px 0 80px;
+    padding: 80px 0;
   }
 }
 .citation.second {
@@ -1056,77 +1062,67 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
     padding: 80px 0;
   }
 }
-.citation img {
-  max-width: 100%;
+.citation .citation-content {
+  font-family: "Biro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  transform: rotate(-4deg);
+  text-transform: uppercase;
 }
-@media screen and (min-width: 768px) {
-  .citation img {
-    max-width: 70%;
+@media screen and (min-width: 992px) {
+  .citation .citation-content {
+    font-size: 52px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .citation img {
-    max-width: 768px;
-  }
+.citation .citation-content.rotate-right {
+  transform: rotate(4deg);
 }
 .citation #slot1,
 .citation #slot2 {
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 @media screen and (min-width: 992px) {
   .citation #slot1,
   .citation #slot2 {
-    width: 160px;
-    height: 160px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .citation #slot1,
-  .citation #slot2 {
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
   }
 }
 .citation #slot1 img,
 .citation #slot2 img {
-  width: 100px;
+  width: 80px;
 }
 @media screen and (min-width: 992px) {
   .citation #slot1 img,
   .citation #slot2 img {
-    width: 160px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .citation #slot1 img,
-  .citation #slot2 img {
-    width: 200px;
+    width: 120px;
   }
 }
 .citation #slot1 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
-}
-@media screen and (min-width: 992px) {
-  .citation #slot1 {
-    bottom: 0;
-    left: 25%;
-  }
-}
-.citation #slot2 {
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: 10;
 }
 @media screen and (min-width: 992px) {
+  .citation #slot1 {
+    bottom: 30px;
+    right: 15%;
+  }
+}
+.citation #slot2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+@media screen and (min-width: 992px) {
   .citation #slot2 {
-    bottom: 0;
-    right: 25%;
+    bottom: 30px;
+    left: 15%;
   }
 }
 #tele-perso .video-container {
@@ -1473,13 +1469,13 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   padding: 0 20px;
 }
 #past-events .nav-pills .nav-item {
-  background: #fac0e6;
+  background: #ef8bc9;
   color: #000000;
   transform: rotate(2deg);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 #past-events .nav-pills .nav-item .nav-link {
-  background: #fac0e6;
+  background: #ef8bc9;
   color: #000000;
   filter: brightness(0.5);
   border-radius: 0;
@@ -1567,7 +1563,7 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   font-weight: bold;
   margin-top: 20px;
   font-family: 'Lemon', sans-serif;
-  color: #fac0e6;
+  color: #ef8bc9;
 }
 #past-events .projet #bodytalks h4 {
   font-weight: bold;
@@ -1692,7 +1688,7 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   font-weight: bold;
   margin-top: 20px;
   font-family: 'Lemon', sans-serif;
-  color: #fac0e6;
+  color: #ef8bc9;
 }
 #past-events .projet #prochaine-fois h4 {
   font-weight: bold;
@@ -1869,7 +1865,7 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   font-weight: bold;
   margin-top: 20px;
   font-family: 'Lemon', sans-serif;
-  color: #fac0e6;
+  color: #ef8bc9;
 }
 #past-events .projet #kurt h4 {
   font-weight: bold;
@@ -2046,7 +2042,7 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   font-weight: bold;
   margin-top: 20px;
   font-family: 'Lemon', sans-serif;
-  color: #fac0e6;
+  color: #ef8bc9;
 }
 #past-events .projet #eyez h4 {
   font-weight: bold;
@@ -2170,7 +2166,7 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   font-weight: bold;
   margin-top: 20px;
   font-family: 'Lemon', sans-serif;
-  color: #fac0e6;
+  color: #ef8bc9;
 }
 #past-events .projet #lost h4 {
   font-weight: bold;
@@ -2302,8 +2298,8 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   margin: 30px auto;
 }
 .modal-dialog.modal-showreel .modal-content {
-  background-color: #fac0e6;
-  border: 2px solid #fac0e6;
+  background-color: #ef8bc9;
+  border: 2px solid #ef8bc9;
 }
 .modal-dialog.modal-showreel .modal-body {
   position: relative;
@@ -2334,8 +2330,8 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   margin: 30px auto;
 }
 #playlist-clips .modal-dialog .modal-content {
-  background-color: #fac0e6;
-  border: 2px solid #fac0e6;
+  background-color: #ef8bc9;
+  border: 2px solid #ef8bc9;
 }
 #playlist-clips .modal-dialog .modal-content .container {
   padding: 0 5px 0;
