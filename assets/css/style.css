@@ -259,7 +259,7 @@ header nav.navbar {
   }
 }
 header nav.navbar .navbar-brand img {
-  width: 70px;
+  width: 100px;
 }
 header nav.navbar .navbar-toggler {
   background: rgba(0, 0, 0, 0.6);
@@ -1269,9 +1269,9 @@ section#team .container-fluid #carousel-team-polaroid .team-member .point-fort {
   transform: rotate(-10deg);
 }
 #tomodachis {
-  padding: 50px 0;
+  padding: 0 50px 50px;
   cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABFklEQVRYR9WXURLDIAhE6/0PbSdOtUpcd1Gnpv1KGpTHBpCE1/cXq+vrMph7dGvXZTtpfW10DCA5jrH1H0Jhs5E0hnZdCR+vb5S8Nn8mQCeS9BdSalYJqMBjAGzq59xAESN7VFVUgV8AZB/dZBR7QTFDCqGquvUBVVoEtgIwpQRzmANSFHgWQKExHdIrPeuMvQNDarXe6nC/AutgV3JW+6bgqQLeV8FekRtgV+ToDKEKnACYKsfZjjkam7a0ZpYTytwmgainpC3HvwBocgKOxqRjehoR9DFKNFYtOwCGYCszobeCbl26N6yyQ6g8X/Wex/rBPsNEV6qAMaJPMynIHQCoSqS9JSMmwef51LflTgCRszU7DvAGiV6mHWfsaVUAAAAASUVORK5CYII=), auto;
-  background-color: #222222;
+  background-color: #000000;
 }
 #tomodachis #characters-selection-container {
   justify-content: center;
