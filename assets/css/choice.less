@@ -34,9 +34,14 @@
   .urbanist;
   font-weight: 500;
   font-size: 13px;
+  max-width: 170px;
+  margin: 0 auto;
+  padding-bottom: 20px;
   
   @media screen and (min-width: 992px) {
    font-size: 16px;
+   max-width: 200px;
+   
   }
  }
 
@@ -47,5 +52,13 @@
    max-width: 100%;
   }
  }
- 
 }
+
+ .pill{
+  max-width: 100px;
+  margin-bottom: 20px;
+  animation: mystic 5s ease-in-out infinite;
+  &.red{
+    animation: mysticred 5s ease-in-out infinite;
+  }
+ }
